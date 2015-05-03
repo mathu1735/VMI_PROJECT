@@ -5,6 +5,7 @@ package com.vmi.web;
 
 import com.vmi.domain.DeliveryPlan;
 import com.vmi.domain.EstimateUsage;
+import com.vmi.domain.InterfaceImportStock;
 import com.vmi.domain.Item;
 import com.vmi.domain.PurchaseOrder;
 import com.vmi.domain.PurchaseOrderBalance;
@@ -66,6 +67,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, com.vmi.domain.EstimateUsage>() {
             public com.vmi.domain.EstimateUsage convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), EstimateUsage.class);
+            }
+        };
+    }
+    
+    public Converter<InterfaceImportStock, String> ApplicationConversionServiceFactoryBean.getInterfaceImportStockToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.vmi.domain.InterfaceImportStock, java.lang.String>() {
+            public String convert(InterfaceImportStock interfaceImportStock) {
+                return new StringBuilder().append(interfaceImportStock.getCreatedBy()).append(' ').append(interfaceImportStock.getUpdatedBy()).append(' ').append(interfaceImportStock.getCreatedDate()).append(' ').append(interfaceImportStock.getUpdatedDate()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, InterfaceImportStock> ApplicationConversionServiceFactoryBean.getIdToInterfaceImportStockConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.vmi.domain.InterfaceImportStock>() {
+            public com.vmi.domain.InterfaceImportStock convert(java.lang.Long id) {
+                return InterfaceImportStock.findInterfaceImportStock(id);
+            }
+        };
+    }
+    
+    public Converter<String, InterfaceImportStock> ApplicationConversionServiceFactoryBean.getStringToInterfaceImportStockConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.vmi.domain.InterfaceImportStock>() {
+            public com.vmi.domain.InterfaceImportStock convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), InterfaceImportStock.class);
             }
         };
     }
@@ -269,6 +294,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getEstimateUsageToStringConverter());
         registry.addConverter(getIdToEstimateUsageConverter());
         registry.addConverter(getStringToEstimateUsageConverter());
+        registry.addConverter(getInterfaceImportStockToStringConverter());
+        registry.addConverter(getIdToInterfaceImportStockConverter());
+        registry.addConverter(getStringToInterfaceImportStockConverter());
         registry.addConverter(getItemToStringConverter());
         registry.addConverter(getIdToItemConverter());
         registry.addConverter(getStringToItemConverter());

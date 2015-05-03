@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_InterfaceImportStock" items="${interfaceimportstocks}" z="MZJ20ppSLHsmiAxtZVKZOSLHBc4=">
+        <table:table data="${interfaceimportstocks}" id="l_com_vmi_domain_InterfaceImportStock" path="/interfaceimportstocks" z="9o5DjEuOHZlykKPwONceFFnFWAY=">
+            <table:column id="c_com_vmi_domain_InterfaceImportStock_createdBy" property="createdBy" z="B/xnBxo5i8l7UBdHhGcMe6XB+CM="/>
+            <table:column id="c_com_vmi_domain_InterfaceImportStock_updatedBy" property="updatedBy" z="P7oEO0sEkGpYlhOwo2TTQJfiCNE="/>
+            <table:column date="true" dateTimePattern="${interfaceImportStock_createddate_date_format}" id="c_com_vmi_domain_InterfaceImportStock_createdDate" property="createdDate" z="sHVF8s9ApB86u53VUlTGOohwgeI="/>
+            <table:column date="true" dateTimePattern="${interfaceImportStock_updateddate_date_format}" id="c_com_vmi_domain_InterfaceImportStock_updatedDate" property="updatedDate" z="+X/9bQNiUOGZ80n/DMJKT1goWFY="/>
+            <table:column date="true" dateTimePattern="${interfaceImportStock_infdate_date_format}" id="c_com_vmi_domain_InterfaceImportStock_InfDate" property="infDate" z="gTBRRI+RZ0qmSXHkmLfgDWvNzo4="/>
+            <table:column id="c_com_vmi_domain_InterfaceImportStock_InfLocationCode" property="infLocationCode" z="MzW83MAwDsjpEjxa3Sto6mO8rg8="/>
+        </table:table>
+    </page:list>
+</div>

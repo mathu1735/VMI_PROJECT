@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_InterfaceImportStock" object="${interfaceimportstock}" path="/interfaceimportstocks" z="oHc2UX4JWYW4JS1aAbDIvnwwXg4=">
+        <field:display field="createdBy" id="s_com_vmi_domain_InterfaceImportStock_createdBy" object="${interfaceimportstock}" z="OtZkOwByZiKsfKvDauuZ9bJ5oPA="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_InterfaceImportStock_updatedBy" object="${interfaceimportstock}" z="K2Lv5jLEEQwkJ0Ei2n54TxALa5Y="/>
+        <field:display date="true" dateTimePattern="${interfaceImportStock_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_InterfaceImportStock_createdDate" object="${interfaceimportstock}" z="fhWbWT9zRWNCkaqvUjW1w+6cgR4="/>
+        <field:display date="true" dateTimePattern="${interfaceImportStock_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_InterfaceImportStock_updatedDate" object="${interfaceimportstock}" z="8qt24E9y9QNMuhhutICVteR2sNU="/>
+        <field:display date="true" dateTimePattern="${interfaceImportStock_infdate_date_format}" field="infDate" id="s_com_vmi_domain_InterfaceImportStock_InfDate" object="${interfaceimportstock}" z="4RRRaAmMUFgnrTEpEicu/H9+WM4="/>
+        <field:display field="infLocationCode" id="s_com_vmi_domain_InterfaceImportStock_InfLocationCode" object="${interfaceimportstock}" z="OZq+y/C4CCmnU6fM81cFxJDneo4="/>
+        <field:display field="infMovementType" id="s_com_vmi_domain_InterfaceImportStock_InfMovementType" object="${interfaceimportstock}" z="XXRxao7+F4A/DWpZOyUXmJg2Qak="/>
+        <field:display field="infRefPO" id="s_com_vmi_domain_InterfaceImportStock_InfRefPO" object="${interfaceimportstock}" z="LHjtBzruX5WYxKhdk2FL8b1vuew="/>
+        <field:display field="infQuantity" id="s_com_vmi_domain_InterfaceImportStock_InfQuantity" object="${interfaceimportstock}" z="Dar8S2cthuD0MJSHbHlnzTMyr+Q="/>
+    </page:show>
+</div>

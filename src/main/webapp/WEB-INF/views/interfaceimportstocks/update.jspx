@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_vmi_domain_InterfaceImportStock" modelAttribute="interfaceImportStock" path="/interfaceimportstocks" versionField="Version" z="X6UqqNMNG0SERlhjl7MLInE0cws=">
+        <field:input field="createdBy" id="c_com_vmi_domain_InterfaceImportStock_createdBy" z="7w2O92GcAqUyTfN4+uj1eS2d2WE="/>
+        <field:input field="updatedBy" id="c_com_vmi_domain_InterfaceImportStock_updatedBy" z="Io75XBafIxlnkHBKS1wZH9lBGVQ="/>
+        <field:datetime dateTimePattern="${interfaceImportStock_createddate_date_format}" field="createdDate" id="c_com_vmi_domain_InterfaceImportStock_createdDate" z="5rD3Wa406Prv+G1Sq1ok9G2HbCM="/>
+        <field:datetime dateTimePattern="${interfaceImportStock_updateddate_date_format}" field="updatedDate" id="c_com_vmi_domain_InterfaceImportStock_updatedDate" z="Tf2pDlG6DMMJbRd9sp8MhmGjTvM="/>
+        <field:datetime dateTimePattern="${interfaceImportStock_infdate_date_format}" field="InfDate" id="c_com_vmi_domain_InterfaceImportStock_InfDate" z="ljDVZZY6i8scQ7oZTfyRXZIsLcw="/>
+        <field:input field="InfLocationCode" id="c_com_vmi_domain_InterfaceImportStock_InfLocationCode" z="rlrRnnZLCIoE0p58Pfzd+y3LqZI="/>
+        <field:input field="InfMovementType" id="c_com_vmi_domain_InterfaceImportStock_InfMovementType" z="kgWN66J809woqI63mynZoibEKg8="/>
+        <field:input field="InfRefPO" id="c_com_vmi_domain_InterfaceImportStock_InfRefPO" z="yQo3Zp3XgY04bN+lPm9tM91brbU="/>
+        <field:input field="InfQuantity" id="c_com_vmi_domain_InterfaceImportStock_InfQuantity" validationMessageCode="field_invalid_number" z="+yREEF4MxAGf/IZk6NkVXX/3uqs="/>
+    </form:update>
+</div>

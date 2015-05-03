@@ -142,3 +142,30 @@ json all --deepSerialize
 web mvc json all
 quit
 // Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-02 20:30:14
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-03 17:54:14
+entity jpa --class ~.domain.InterfaceStock --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field date --fieldName InterfaceDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field string --fieldName InterfaceLocationCode
+field number --fieldName InterfaceQuantity --type java.lang.Double
+field string --fieldName InterfaceMovementType
+field string --fieldName InterfaceRef
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-03 18:01:43
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-03 18:01:56
+entity jpa --class ~.domain.InterfaceImportStock --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field date --fieldName InfDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field string --fieldName InfLocationCode
+field string --fieldName InfMovementType
+field string --fieldName InfRefPO
+field number --fieldName InfQuantity --type java.lang.Double
+web mvc all --package ~.web
+json all --deepSerialize
+web mvc json all
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-03 18:13:31
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-03 18:16:27
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-03 18:17:48
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-03 18:19:03
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-03 18:19:22
