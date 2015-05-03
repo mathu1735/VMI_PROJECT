@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="stocklocations/list">
+        <put-attribute name="body" value="/WEB-INF/views/stocklocations/list.jspx"/>
+    </definition>
+<definition extends="default" name="stocklocations/show">
+        <put-attribute name="body" value="/WEB-INF/views/stocklocations/show.jspx"/>
+    </definition>
+<definition extends="default" name="stocklocations/create">
+        <put-attribute name="body" value="/WEB-INF/views/stocklocations/create.jspx"/>
+    </definition>
+<definition extends="default" name="stocklocations/update">
+        <put-attribute name="body" value="/WEB-INF/views/stocklocations/update.jspx"/>
+    </definition>
+    <definition extends="default" name="stocklocations/StockLocation">
+        <put-attribute name="body" value="/WEB-INF/views/stocklocations/StockLocationMainPage.jspx"/>
+    </definition>
+</tiles-definitions>

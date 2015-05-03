@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_vmi_domain_PurchaseOrder" modelAttribute="purchaseOrder" path="/purchaseorders" versionField="Version" z="wWCiMDxDaOmIMRGCG3Xy8a2DBGY=">
+        <field:input field="createdBy" id="c_com_vmi_domain_PurchaseOrder_createdBy" z="io0cTqmqoaUR9XuJJ2vnrNc9v/Y="/>
+        <field:input field="updatedBy" id="c_com_vmi_domain_PurchaseOrder_updatedBy" z="aOyL0Fm/GOEX9bDhTKtt8VHYrkw="/>
+        <field:datetime dateTimePattern="${purchaseOrder_createddate_date_format}" field="createdDate" id="c_com_vmi_domain_PurchaseOrder_createdDate" z="6OXTKoIiUw/V4T0M/BHqjZzJLPI="/>
+        <field:datetime dateTimePattern="${purchaseOrder_updateddate_date_format}" field="updatedDate" id="c_com_vmi_domain_PurchaseOrder_updatedDate" z="CWnLQsDuFss0CMoUux5Rs0MGmrA="/>
+        <field:input field="POQuantity" id="c_com_vmi_domain_PurchaseOrder_POQuantity" validationMessageCode="field_invalid_number" z="uNuvRvAd8QcjETjjyn1DHgdtY+E="/>
+        <field:input field="POCode" id="c_com_vmi_domain_PurchaseOrder_POCode" z="FoUdt9jkzH0S8YhYUCej0ru/ZBw="/>
+        <field:input field="POCurrentQuantity" id="c_com_vmi_domain_PurchaseOrder_POCurrentQuantity" validationMessageCode="field_invalid_number" z="DKiLTcsSNIFck6nEKPUhUHr2oM8="/>
+        <field:input field="POUsageQuantity" id="c_com_vmi_domain_PurchaseOrder_POUsageQuantity" validationMessageCode="field_invalid_number" z="GNjIiX+KRcH+luVbCJGx+GX5/Tk="/>
+        <field:input field="POActive" id="c_com_vmi_domain_PurchaseOrder_POActive" z="Y/BP1LlbImxMriQDep7jSblhFDQ="/>
+    </form:update>
+</div>

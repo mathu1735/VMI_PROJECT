@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_RequestDeliveryPlan" object="${requestdeliveryplan}" path="/requestdeliveryplans" z="8QQF6xYudHze4AlJbmZeBRnsAfk=">
+        <field:display field="createdBy" id="s_com_vmi_domain_RequestDeliveryPlan_createdBy" object="${requestdeliveryplan}" z="e/bAo5d/pwoynp+lgj1F0blTbDE="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_RequestDeliveryPlan_updatedBy" object="${requestdeliveryplan}" z="bF6Pc4F2mZd+lEzB8mMR3/tZoJE="/>
+        <field:display date="true" dateTimePattern="${requestDeliveryPlan_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_RequestDeliveryPlan_createdDate" object="${requestdeliveryplan}" z="43IoVr/Sk5lFzt8kjlnUxQrcjc4="/>
+        <field:display date="true" dateTimePattern="${requestDeliveryPlan_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_RequestDeliveryPlan_updatedDate" object="${requestdeliveryplan}" z="+zRxc3+4jL2yEFDkqm/tdKNYSW8="/>
+        <field:display date="true" dateTimePattern="${requestDeliveryPlan_reqdelirequestdate_date_format}" field="reqDeliRequestDate" id="s_com_vmi_domain_RequestDeliveryPlan_ReqDeliRequestDate" object="${requestdeliveryplan}" z="hNbklxbbvT1W9TUJZk9kf/q28Ec="/>
+        <field:display date="true" dateTimePattern="${requestDeliveryPlan_reqdelidate_date_format}" field="reqDeliDate" id="s_com_vmi_domain_RequestDeliveryPlan_ReqDeliDate" object="${requestdeliveryplan}" z="EWgOYCh1Psp8aZXAiAmPoy2z7Ps="/>
+        <field:display field="reqDeliQuantity" id="s_com_vmi_domain_RequestDeliveryPlan_ReqDeliQuantity" object="${requestdeliveryplan}" z="IyZx2xAzBeIZBa+L3O4qneZ8QVg="/>
+        <field:display field="reqDeliStatus" id="s_com_vmi_domain_RequestDeliveryPlan_ReqDeliStatus" object="${requestdeliveryplan}" z="LvmgHTuHtkrSYuplHmXT3N2UabE="/>
+    </page:show>
+</div>

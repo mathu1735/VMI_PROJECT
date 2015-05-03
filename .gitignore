@@ -1,0 +1,10 @@
+.DS_Store
+.DS_Store?
+target/*
+*.log
+.idea/*
+src/main/webapp/WEB-INF/classes/*
+src/main/resources/META-INF/spring/database.properties
+*.iml
+.project
+

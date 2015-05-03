@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_PurchaseOrderBalance" object="${purchaseorderbalance}" path="/purchaseorderbalances" z="iK1rwD9WCbxjGgJsQL98hR9T2mw=">
+        <field:display field="createdBy" id="s_com_vmi_domain_PurchaseOrderBalance_createdBy" object="${purchaseorderbalance}" z="aShpvAelUcNstCQ3UiueRYZ8fVY="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_PurchaseOrderBalance_updatedBy" object="${purchaseorderbalance}" z="weuqLBOjjjQOrxQBYAljMkfi5as="/>
+        <field:display date="true" dateTimePattern="${purchaseOrderBalance_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_PurchaseOrderBalance_createdDate" object="${purchaseorderbalance}" z="yPJeoNpTuFq4fzX94tD3B2u0r7A="/>
+        <field:display date="true" dateTimePattern="${purchaseOrderBalance_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_PurchaseOrderBalance_updatedDate" object="${purchaseorderbalance}" z="SI6EHSAsJNhOEhKU7Bt7WHexrsI="/>
+        <field:display date="true" dateTimePattern="${purchaseOrderBalance_pobaldate_date_format}" field="POBalDate" id="s_com_vmi_domain_PurchaseOrderBalance_POBalDate" object="${purchaseorderbalance}" z="F1VLDa3WSp5epgFlNWddzPW+zo0="/>
+        <field:display field="POBalQuantity" id="s_com_vmi_domain_PurchaseOrderBalance_POBalQuantity" object="${purchaseorderbalance}" z="fEOiQwoh90thypo25g8TAMfw4NI="/>
+        <field:display field="POBalUsageQuantity" id="s_com_vmi_domain_PurchaseOrderBalance_POBalUsageQuantity" object="${purchaseorderbalance}" z="G9wVUk2mdM09eFoV0lzjiYaMr48="/>
+        <field:display field="POCode" id="s_com_vmi_domain_PurchaseOrderBalance_POCode" object="${purchaseorderbalance}" z="W9jFoBejetEeNy2XFfU+xO1VSE0="/>
+    </page:show>
+</div>

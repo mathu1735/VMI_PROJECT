@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_vmi_domain_PurchaseOrderDelivery" modelAttribute="purchaseOrderDelivery" path="/purchaseorderdeliverys" render="${empty dependencies}" z="fmkNxyWLlLpy+KFWTGForbetOFM=">
+        <field:input field="createdBy" id="c_com_vmi_domain_PurchaseOrderDelivery_createdBy" z="s9Uyt1E8PfY0VNF9nPsGlnsyp2c="/>
+        <field:input field="updatedBy" id="c_com_vmi_domain_PurchaseOrderDelivery_updatedBy" z="/Pa15IIMn5m1qm0WqcnyvxsBw8g="/>
+        <field:datetime dateTimePattern="${purchaseOrderDelivery_createddate_date_format}" field="createdDate" id="c_com_vmi_domain_PurchaseOrderDelivery_createdDate" z="rOKNp/jiL7V3fNSE04QUbQBQWqk="/>
+        <field:datetime dateTimePattern="${purchaseOrderDelivery_updateddate_date_format}" field="updatedDate" id="c_com_vmi_domain_PurchaseOrderDelivery_updatedDate" z="qzEmgo1SXVA5V/W8t7J1OvebxGw="/>
+        <field:input field="PODRequestQuantity" id="c_com_vmi_domain_PurchaseOrderDelivery_PODRequestQuantity" z="iIyXpBVfDjFYkPyVnIeX9YTgyd8="/>
+        <field:input field="PODReqQuantity" id="c_com_vmi_domain_PurchaseOrderDelivery_PODReqQuantity" validationMessageCode="field_invalid_number" z="1g7DT0085YxIOeOybP8esmd48S4="/>
+        <field:input field="PODRecQuantity" id="c_com_vmi_domain_PurchaseOrderDelivery_PODRecQuantity" validationMessageCode="field_invalid_number" z="jyYatkoS53ve2mJYDh011LWNSPw="/>
+        <field:datetime dateTimePattern="${purchaseOrderDelivery_podrecdate_date_format}" field="PODRecDate" id="c_com_vmi_domain_PurchaseOrderDelivery_PODRecDate" z="xtg/C1gvClbYczNCi1NYxjVoxJU="/>
+        <field:datetime dateTimePattern="${purchaseOrderDelivery_podreqdate_date_format}" field="PODReqDate" id="c_com_vmi_domain_PurchaseOrderDelivery_PODReqDate" z="jFFrTpAKXb5qE0Kl6LKPdc20oiA="/>
+        <field:select field="POCode" id="c_com_vmi_domain_PurchaseOrderDelivery_POCode" itemValue="id" items="${purchaseorders}" path="/purchaseorders" z="tQl92bQTCGkJ94pOzlGgUSCGDLI="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_vmi_domain_PurchaseOrderDelivery" render="${not empty dependencies}" z="7xgrQYoUL/ejMYXFAKyEzC5sLS8="/>
+</div>

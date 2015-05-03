@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_RequestDeliveryPlan" items="${requestdeliveryplans}" z="c2XRloKNPKbrYCfI4gbE1kX/DnA=">
+        <table:table data="${requestdeliveryplans}" id="l_com_vmi_domain_RequestDeliveryPlan" path="/requestdeliveryplans" z="HgTq3UnLUclMpsL9nVo49XhJWJY=">
+            <table:column id="c_com_vmi_domain_RequestDeliveryPlan_createdBy" property="createdBy" z="1/Oln1J0tr5NAzRGUfU3c5hNHZQ="/>
+            <table:column id="c_com_vmi_domain_RequestDeliveryPlan_updatedBy" property="updatedBy" z="/zwoz2qPgwwVNE36NxoWZpwgG6Y="/>
+            <table:column date="true" dateTimePattern="${requestDeliveryPlan_createddate_date_format}" id="c_com_vmi_domain_RequestDeliveryPlan_createdDate" property="createdDate" z="Ae3kNhl4/5wTg6PfO+lMq6kS9DQ="/>
+            <table:column date="true" dateTimePattern="${requestDeliveryPlan_updateddate_date_format}" id="c_com_vmi_domain_RequestDeliveryPlan_updatedDate" property="updatedDate" z="4KITSFFxUaB8J3N6ByUpQNLaLec="/>
+            <table:column date="true" dateTimePattern="${requestDeliveryPlan_reqdelirequestdate_date_format}" id="c_com_vmi_domain_RequestDeliveryPlan_ReqDeliRequestDate" property="reqDeliRequestDate" z="X5UZKOxZfvNMVmZ5fQvXVxtQF0s="/>
+            <table:column date="true" dateTimePattern="${requestDeliveryPlan_reqdelidate_date_format}" id="c_com_vmi_domain_RequestDeliveryPlan_ReqDeliDate" property="reqDeliDate" z="JwFsNr46c5NoPqCW6Fu3lltPEC4="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_EstimateUsage" object="${estimateusage}" path="/estimateusages" z="8d0Iyj0uxgeghxSbMWN8QjH5DQc=">
+        <field:display field="createdBy" id="s_com_vmi_domain_EstimateUsage_createdBy" object="${estimateusage}" z="KLOdPfy6Bggu3syju3LwOcXOge4="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_EstimateUsage_updatedBy" object="${estimateusage}" z="buo/wyLiWwfOBxhI0rRtE74UX7c="/>
+        <field:display date="true" dateTimePattern="${estimateUsage_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_EstimateUsage_createdDate" object="${estimateusage}" z="X4D9+IihfkJ+GcwoNlF2BACY4nc="/>
+        <field:display date="true" dateTimePattern="${estimateUsage_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_EstimateUsage_updatedDate" object="${estimateusage}" z="ULzbAzgrHzx6vRWPwhxO8+UwWoo="/>
+        <field:display date="true" dateTimePattern="${estimateUsage_estistartdate_date_format}" field="estiStartDate" id="s_com_vmi_domain_EstimateUsage_EstiStartDate" object="${estimateusage}" z="naD5mvjT/Y4vO/p4oB8ZctLczq8="/>
+        <field:display field="estiQ1" id="s_com_vmi_domain_EstimateUsage_EstiQ1" object="${estimateusage}" z="VnQAz+l1eJl1d5IN1nTnADCe7p0="/>
+        <field:display field="estiQ2" id="s_com_vmi_domain_EstimateUsage_EstiQ2" object="${estimateusage}" z="8GLhRdMpPgM9d/NslkcUREkYMgY="/>
+        <field:display field="estiQ3" id="s_com_vmi_domain_EstimateUsage_EstiQ3" object="${estimateusage}" z="U+FnASHjHO4AQK0MFNYOrQkBA7I="/>
+        <field:display field="estiQ4" id="s_com_vmi_domain_EstimateUsage_EstiQ4" object="${estimateusage}" z="U75cDFrr+9HDVKnrzIgGWL0jBFo="/>
+        <field:display field="estiQ5" id="s_com_vmi_domain_EstimateUsage_EstiQ5" object="${estimateusage}" z="r0To7mvcGQWx9SjLkGa+2fIvEKk="/>
+        <field:display field="estiQ6" id="s_com_vmi_domain_EstimateUsage_EstiQ6" object="${estimateusage}" z="9OMlk7HETCo97DipzmYJnOelTOg="/>
+        <field:display field="estiQ7" id="s_com_vmi_domain_EstimateUsage_EstiQ7" object="${estimateusage}" z="ZEHuU6qMQBAlpDmIo59BA3vumNs="/>
+    </page:show>
+</div>

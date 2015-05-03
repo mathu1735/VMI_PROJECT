@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_StockMovement" object="${stockmovement}" path="/stockmovements" z="3VXPYpOSdTLfJvtzYGu5R+XlLnE=">
+        <field:display field="createdBy" id="s_com_vmi_domain_StockMovement_createdBy" object="${stockmovement}" z="g7ntn1mcsoKTv9wOqMz6ugtHd3Y="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_StockMovement_updatedBy" object="${stockmovement}" z="Qg2Aq0U7Qgn5OJBUMYvropWGfk0="/>
+        <field:display date="true" dateTimePattern="${stockMovement_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_StockMovement_createdDate" object="${stockmovement}" z="2XvqYsOY3xtpyIGLy3FAR3z6qzU="/>
+        <field:display date="true" dateTimePattern="${stockMovement_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_StockMovement_updatedDate" object="${stockmovement}" z="86d9rBhkosAAcgvyoWtmcUcs3ak="/>
+        <field:display field="SMovStatusCode" id="s_com_vmi_domain_StockMovement_SMovStatusCode" object="${stockmovement}" z="2J5PRVqMgRzi66ZbYPEVGG93oWc="/>
+        <field:display field="SMovQuantity" id="s_com_vmi_domain_StockMovement_SMovQuantity" object="${stockmovement}" z="Ew02RYJFDC30HHHrB3v7QeQg+RI="/>
+        <field:display field="SLocCode" id="s_com_vmi_domain_StockMovement_SLocCode" object="${stockmovement}" z="Dhx1G53fNurXDa3JGrAhURHRJME="/>
+        <field:display date="true" dateTimePattern="${stockMovement_smovdate_date_format}" field="SMovDate" id="s_com_vmi_domain_StockMovement_SMovDate" object="${stockmovement}" z="3f4K4xWHFDzgtXZV5yL7n17H/bM="/>
+        <field:display field="POCode" id="s_com_vmi_domain_StockMovement_POCode" object="${stockmovement}" z="9SE8G2bACAcqTK45p2s3N1iQhlw="/>
+        <field:display field="SMovBalance" id="s_com_vmi_domain_StockMovement_SMovBalance" object="${stockmovement}" z="XH1StnSXXoH1u3E6UjxQcDaJVx8="/>
+    </page:show>
+</div>

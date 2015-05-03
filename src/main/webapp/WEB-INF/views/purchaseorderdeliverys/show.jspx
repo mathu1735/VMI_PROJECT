@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_PurchaseOrderDelivery" object="${purchaseorderdelivery}" path="/purchaseorderdeliverys" z="l2k5DyQBhEEpQ67zA0jcLB9l3oI=">
+        <field:display field="createdBy" id="s_com_vmi_domain_PurchaseOrderDelivery_createdBy" object="${purchaseorderdelivery}" z="npMCPBYaxyIsLFh4ZIO4SIgLhAk="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_PurchaseOrderDelivery_updatedBy" object="${purchaseorderdelivery}" z="BrZRqKvZ1GXer4cgXE++A72EII8="/>
+        <field:display date="true" dateTimePattern="${purchaseOrderDelivery_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_PurchaseOrderDelivery_createdDate" object="${purchaseorderdelivery}" z="Xwg3+/28318cx4EcdMSi29PFuaM="/>
+        <field:display date="true" dateTimePattern="${purchaseOrderDelivery_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_PurchaseOrderDelivery_updatedDate" object="${purchaseorderdelivery}" z="ZoDSeWuFp1/ykPZWFfzxc85Tvms="/>
+        <field:display field="PODRequestQuantity" id="s_com_vmi_domain_PurchaseOrderDelivery_PODRequestQuantity" object="${purchaseorderdelivery}" z="7H1i5pPlrFtfQhaQYQZg1qUd0XY="/>
+        <field:display field="PODReqQuantity" id="s_com_vmi_domain_PurchaseOrderDelivery_PODReqQuantity" object="${purchaseorderdelivery}" z="u3Xe/8R8O5pHJwcjXDVqpHjIoYM="/>
+        <field:display field="PODRecQuantity" id="s_com_vmi_domain_PurchaseOrderDelivery_PODRecQuantity" object="${purchaseorderdelivery}" z="MPS2Zhc/FgAzGvajNEDXNZRXyPc="/>
+        <field:display date="true" dateTimePattern="${purchaseOrderDelivery_podrecdate_date_format}" field="PODRecDate" id="s_com_vmi_domain_PurchaseOrderDelivery_PODRecDate" object="${purchaseorderdelivery}" z="ZquDymaL9XXlN1zVf60OIaRTKS0="/>
+        <field:display date="true" dateTimePattern="${purchaseOrderDelivery_podreqdate_date_format}" field="PODReqDate" id="s_com_vmi_domain_PurchaseOrderDelivery_PODReqDate" object="${purchaseorderdelivery}" z="aoasFkHQ52bjHUfQhIoXenKgi4U="/>
+        <field:display field="POCode" id="s_com_vmi_domain_PurchaseOrderDelivery_POCode" object="${purchaseorderdelivery}" z="yg107WtQ7AyJ9dnevOH4SjloWOE="/>
+    </page:show>
+</div>

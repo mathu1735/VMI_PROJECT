@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_DeliveryPlan" object="${deliveryplan}" path="/deliveryplans" z="CbtE/l3vxhruQiHUUxomnkZZx2I=">
+        <field:display field="createdBy" id="s_com_vmi_domain_DeliveryPlan_createdBy" object="${deliveryplan}" z="XZN4t5PmkJsANpSKvP6w+Wh02yE="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_DeliveryPlan_updatedBy" object="${deliveryplan}" z="NR2GL37soTdmQi1gIZdU9FIICec="/>
+        <field:display date="true" dateTimePattern="${deliveryPlan_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_DeliveryPlan_createdDate" object="${deliveryplan}" z="yW8ckzU+ptqys9gxIRpzxlUuIn4="/>
+        <field:display date="true" dateTimePattern="${deliveryPlan_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_DeliveryPlan_updatedDate" object="${deliveryplan}" z="LP4gx5zTO8qpD0EtSH7R8mp9+A8="/>
+        <field:display date="true" dateTimePattern="${deliveryPlan_delidate_date_format}" field="deliDate" id="s_com_vmi_domain_DeliveryPlan_DeliDate" object="${deliveryplan}" z="rxX37j3+fjnGMq19sKLFKNrixgM="/>
+        <field:display field="deliQuantity" id="s_com_vmi_domain_DeliveryPlan_DeliQuantity" object="${deliveryplan}" z="xzCQeWvSfMulZaJ68gIoUxPAGGM="/>
+        <field:display field="deliPOCode" id="s_com_vmi_domain_DeliveryPlan_DeliPOCode" object="${deliveryplan}" z="dUqJyOMo95OmVxSr/1zy7AjVW8c="/>
+        <field:display field="deliStatus" id="s_com_vmi_domain_DeliveryPlan_DeliStatus" object="${deliveryplan}" z="0hmVFJvBSqWXsB2LU7fY47rIlQg="/>
+    </page:show>
+</div>

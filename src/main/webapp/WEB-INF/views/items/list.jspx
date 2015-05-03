@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_Item" items="${items}" z="haMVOlsUb7G3uwre1OMqK7Oo/NA=">
+        <table:table data="${items}" id="l_com_vmi_domain_Item" path="/items" z="s1vouhtzWDZKC1azlriE29z/1BE=">
+            <table:column id="c_com_vmi_domain_Item_createdBy" property="createdBy" z="cuSxYuRiVZcsLniOPhoI0ecVF7A="/>
+            <table:column id="c_com_vmi_domain_Item_updatedBy" property="updatedBy" z="/R7o/Z/yo1E2+JbfnE+2BTZIkCQ="/>
+            <table:column date="true" dateTimePattern="${item_createddate_date_format}" id="c_com_vmi_domain_Item_createdDate" property="createdDate" z="+1uhCMWj7WNSP0bzwk+ZHtsl9+o="/>
+            <table:column date="true" dateTimePattern="${item_updateddate_date_format}" id="c_com_vmi_domain_Item_updatedDate" property="updatedDate" z="ija3Sc05tYBS/87rFDSsqUHdD7Y="/>
+            <table:column id="c_com_vmi_domain_Item_ItemName" property="itemName" z="De6XP6ppKKs5DGfsDtemuYR2/kg="/>
+            <table:column id="c_com_vmi_domain_Item_ItemCode" property="itemCode" z="9SjEj9SnhP3toliinzMMRficH4s="/>
+        </table:table>
+    </page:list>
+</div>

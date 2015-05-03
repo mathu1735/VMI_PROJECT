@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_StockMovement" items="${stockmovements}" z="+tuCt7HALFOTOT+z+Vg3uKAzFMg=">
+        <table:table data="${stockmovements}" id="l_com_vmi_domain_StockMovement" path="/stockmovements" z="F6fbGoG8b1YbohHBjMdOVVqPbtw=">
+            <table:column id="c_com_vmi_domain_StockMovement_createdBy" property="createdBy" z="DWPU1BHIoUQAiw+aBxj8pEiUvMY="/>
+            <table:column id="c_com_vmi_domain_StockMovement_updatedBy" property="updatedBy" z="b52XfqYq0WG/kt3ks0hg8KJPwIc="/>
+            <table:column date="true" dateTimePattern="${stockMovement_createddate_date_format}" id="c_com_vmi_domain_StockMovement_createdDate" property="createdDate" z="FoUQ6GZiM1AC3CzsPgIDqON9wWc="/>
+            <table:column date="true" dateTimePattern="${stockMovement_updateddate_date_format}" id="c_com_vmi_domain_StockMovement_updatedDate" property="updatedDate" z="8XJGHq0KexiFHf9MzrtDv6PuTq8="/>
+            <table:column id="c_com_vmi_domain_StockMovement_SMovStatusCode" property="SMovStatusCode" z="pUqWDEgKXa29WJ7RjMqiYXX6oOA="/>
+            <table:column id="c_com_vmi_domain_StockMovement_SMovQuantity" property="SMovQuantity" z="bYLwV8HJI9Mr1PbUlG0ZA+uwiyM="/>
+        </table:table>
+    </page:list>
+</div>

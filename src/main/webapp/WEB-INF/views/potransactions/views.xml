@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="potransactions/list">
+        <put-attribute name="body" value="/WEB-INF/views/potransactions/list.jspx"/>
+    </definition>
+<definition extends="default" name="potransactions/show">
+        <put-attribute name="body" value="/WEB-INF/views/potransactions/show.jspx"/>
+    </definition>
+<definition extends="default" name="potransactions/create">
+        <put-attribute name="body" value="/WEB-INF/views/potransactions/create.jspx"/>
+    </definition>
+<definition extends="default" name="potransactions/update">
+        <put-attribute name="body" value="/WEB-INF/views/potransactions/update.jspx"/>
+    </definition>
+</tiles-definitions>

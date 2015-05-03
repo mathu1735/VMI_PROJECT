@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_PurchaseOrder" items="${purchaseorders}" z="DQRWgb44gi94Xd/BBLusmgnvnBw=">
+        <table:table data="${purchaseorders}" id="l_com_vmi_domain_PurchaseOrder" path="/purchaseorders" z="LYEpF+POYX5Txsl00e/yPvjEcZg=">
+            <table:column id="c_com_vmi_domain_PurchaseOrder_createdBy" property="createdBy" z="xscp2zal0fg+IPN7AwOPG2hvUjk="/>
+            <table:column id="c_com_vmi_domain_PurchaseOrder_updatedBy" property="updatedBy" z="TlcCdSlc6CLv81YBKThY6eQ3Q5s="/>
+            <table:column date="true" dateTimePattern="${purchaseOrder_createddate_date_format}" id="c_com_vmi_domain_PurchaseOrder_createdDate" property="createdDate" z="78MyMAszpUkBlH4JjttpQ2aOrVI="/>
+            <table:column date="true" dateTimePattern="${purchaseOrder_updateddate_date_format}" id="c_com_vmi_domain_PurchaseOrder_updatedDate" property="updatedDate" z="gLLB12GWzvN1Zc73JiEWozKRX98="/>
+            <table:column id="c_com_vmi_domain_PurchaseOrder_POQuantity" property="POQuantity" z="4Ro2hq/3Oa243waWw/TRn/QPxi4="/>
+            <table:column id="c_com_vmi_domain_PurchaseOrder_POCode" property="POCode" z="F3nPRsL/ZRDkJAeqGrhyyoSvQxA="/>
+        </table:table>
+    </page:list>
+</div>

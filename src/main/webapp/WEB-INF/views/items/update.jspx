@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_vmi_domain_Item" modelAttribute="item" path="/items" versionField="Version" z="Bd9xypIuU29XTpkuKlP8jmxrOug=">
+        <field:input field="createdBy" id="c_com_vmi_domain_Item_createdBy" z="VHQ34/ysWk1J3v8mfhIzPunOAOg="/>
+        <field:input field="updatedBy" id="c_com_vmi_domain_Item_updatedBy" z="4GwYJE6SHEpN/yIVLrYwAeeYbjA="/>
+        <field:datetime dateTimePattern="${item_createddate_date_format}" field="createdDate" id="c_com_vmi_domain_Item_createdDate" z="u7CRWOKA/KL/YrRpMUkH2aTCsPU="/>
+        <field:datetime dateTimePattern="${item_updateddate_date_format}" field="updatedDate" id="c_com_vmi_domain_Item_updatedDate" z="+FhyI9QXupHXH0SzBvim2ZyaLI4="/>
+        <field:input field="ItemName" id="c_com_vmi_domain_Item_ItemName" z="ETMZZ9PGCmdZcUUwDUp86vEER14="/>
+        <field:input field="ItemCode" id="c_com_vmi_domain_Item_ItemCode" z="UcPFv++lLRC/CkXdnZVFRNidVRA="/>
+    </form:update>
+</div>

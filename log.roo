@@ -1,0 +1,144 @@
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-15 18:17:27
+project --topLevelPackage com.vmi
+// [failed] jpa setup --database MYSQL --provider HIBERNATE --hostName localhost --userName root --password 1234 --databaseName VMI
+jpa setup --database MYSQL --provider HIBERNATE --hostName localhost --userName root --password 1234 --databaseName VMI
+entity jpa --class ~base.BaseEntity --abstract --mappedSuperclass --activeRecord
+field string createdBy
+field string updatedBy
+field date --fieldName createdDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field date --fieldName updatedDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+entity jpa --class ~.domain.stockLocation --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field string --fieldName SLocName
+field string --fieldName SLocCode
+field number --fieldName SLocCurrentQuantity --type java.lang.Double
+field number --fieldName SLocMin --type java.lang.Integer 
+field number --fieldName SLocMax --type java.lang.Integer 
+perform tests
+ web mvc setup
+web mvc all --package ~.web
+json all --deepSerialize 
+web mvc json all 
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-15 18:27:38
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-15 18:42:16
+entity jpa --class ~.domain.StockMovement --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field string --fieldName SMovStatusCode
+field number --fieldName SMovQuantity --type java.lang.Double
+field date --fieldName SMovDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+entity jpa --class ~.domain.PurchaseOrder --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field number --fieldName POQuantity --type java.lang.Double
+field string --fieldName POCode
+field number --fieldName POCurrentQuantity --type java.lang.Double
+field number --fieldName POUsageQuantity --type java.lang.Double
+field string --fieldName POActive
+entity jpa --class ~.domain.PurchaseOrderDelivery --extends ~.base.BaseEntity --inheritanceType 
+field string --fieldName PODRequestQuantity
+field number --fieldName PODReqQuantity --type java.lang.Double
+field number --fieldName PODRecQuantity --type java.lang.Double
+field date --fieldName PODRecDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field date --fieldName PODReqDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+entity jpa --class ~.domain.POTransaction --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field date --fieldName POTranDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field string --fieldName POTranStatusCode
+field string --fieldName POTranDesc
+field number --fieldName POTranQuantity --type java.lang.Double 
+entity jpa --class ~.domain.EstimateUsage --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically
+field date --fieldName EstiStartDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field number --fieldName EstiQ1 --type java.lang.Double
+field number --fieldName EstiQ2 --type java.lang.Double
+field number --fieldName EstiQ3 --type java.lang.Double
+field number --fieldName EstiQ4 --type java.lang.Double
+field number --fieldName EstiQ5 --type java.lang.Double
+field number --fieldName EstiQ6 --type java.lang.Double
+field number --fieldName EstiQ7 --type java.lang.Double
+web mvc all --package ~.web
+json all --deepSerialize 
+web mvc json all 
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-15 18:46:56
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-15 18:47:03
+ perform tests
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-15 18:47:45
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-19 20:04:53
+focus --class ~.domain.StockMovement
+
+web mvc all --package ~.web
+json all --deepSerialize
+web mvc json all 
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-19 20:17:36
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-19 20:23:11
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-19 20:25:24
+focus --class ~.domain.StockMovement
+// [failed] field reference --fieldName SLocCode --type ~.domain.StockLocation --cardinality ONE_TO_MANY --fetch EAGER --joinColumnName SLocCode
+
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-19 20:33:51
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-19 20:41:07
+focus --class ~.domain.StockMovement
+
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-19 20:43:00
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-19 20:50:26
+focus --class ~.domain.StockMovement
+field reference --fieldName SLocCode --type ~.domain.StockLocation --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName SLocCode
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-19 20:59:08
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-19 22:05:50
+focus --class ~.domain.StockMovement
+field date --fieldName SMovDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd.MM.yyyy"
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-19 22:10:30
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-04-20 15:01:22
+focus --class ~.domain.StockMovement
+field reference --fieldName POCode --type ~.domain.PurchaseOrder --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName POCode
+focus --class ~.domain.StockMovement
+field number --fieldName SMovBalance --type java.lang.Double
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-04-20 15:12:35
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-02 18:24:37
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-02 18:26:04
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-02 19:30:26
+entity jpa --class ~.domain.Item --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically
+field string --fieldName ItemName
+field string --fieldName ItemCode
+entity jpa --class ~.domain.StockBalance --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field date --fieldName SBalDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field number --fieldName SBalQuantity --type java.lang.Double 
+field string --fieldName SBalLocationCode
+entity jpa --class ~.domain.PurchaseOrderBalance --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field date --fieldName POBalDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field number --fieldName POBalQuantity --type java.lang.Double 
+field number --fieldName POBalUsageQuantity --type java.lang.Double
+entity jpa --class ~.domain.DeliveryPlan --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically
+field date --fieldName DeliDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field number --fieldName DeliQuantity --type java.lang.Double
+field string --fieldName DeliPOCode
+field string --fieldName DeliStatus
+entity jpa --class ~.domain.RequestDeliveryPlan --extends ~.base.BaseEntity --inheritanceType TABLE_PER_CLASS --testAutomatically 
+field date --fieldName ReqDeliRequestDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field date --fieldName ReqDeliDate --type java.util.Date --dateFormat SHORT --dateTimeFormatPattern "dd/MM/yyyy"
+field number --fieldName ReqDeliQuantity --type java.lang.Double  
+field string --fieldName ReqDeliStatus
+focus --class ~.domain.StockLocation
+field reference --fieldName ItemCode --type ~.domain.Item --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName ItemCode
+focus --class ~.domain.PurchaseOrderDelivery
+field reference --fieldName POCode --type ~.domain.PurchaseOrder --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName POCode
+focus --class ~.domain.PurchaseOrderBalance
+field reference --fieldName POCode --type ~.domain.PurchaseOrder --cardinality MANY_TO_ONE --fetch EAGER --joinColumnName POCode
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-02 20:13:48
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-02 20:14:52
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-02 20:15:40
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-02 20:24:46
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-02 20:25:27
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-02 20:29:17
+web mvc all --package ~.web
+json all --deepSerialize
+web mvc json all
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-02 20:30:14

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_vmi_domain_StockLocation" modelAttribute="stockLocation" path="/stocklocations" versionField="Version" z="aqY8ju7qrn3jJMNQqM/EI9qmiOY=">
+        <field:input field="createdBy" id="c_com_vmi_domain_StockLocation_createdBy" z="onVco3T19H6xRQd4BuY5IwFCnxQ="/>
+        <field:input field="updatedBy" id="c_com_vmi_domain_StockLocation_updatedBy" z="zYh3uz/4kVCyQSYoVlyQ5Wxu4oI="/>
+        <field:datetime dateTimePattern="${stockLocation_createddate_date_format}" field="createdDate" id="c_com_vmi_domain_StockLocation_createdDate" z="aiOUh2Dm91OgpspqAkHOdUidimc="/>
+        <field:datetime dateTimePattern="${stockLocation_updateddate_date_format}" field="updatedDate" id="c_com_vmi_domain_StockLocation_updatedDate" z="+jXeXf6N9vbtvzMOggUev4pihgI="/>
+        <field:input field="SLocName" id="c_com_vmi_domain_StockLocation_SLocName" z="bciq7yfc4p19kK72hp9YgXjUps8="/>
+        <field:input field="SLocCode" id="c_com_vmi_domain_StockLocation_SLocCode" z="9R3Ae/5ERp8xFgGciWoRnTDJUv0="/>
+        <field:input field="SLocCurrentQuantity" id="c_com_vmi_domain_StockLocation_SLocCurrentQuantity" validationMessageCode="field_invalid_number" z="2Zk2fh6ruSwWNP6mhephB9beO40="/>
+        <field:input field="SLocMin" id="c_com_vmi_domain_StockLocation_SLocMin" validationMessageCode="field_invalid_integer" z="ghTFMnBvNXQDpCc2wv6d1KRkjIc="/>
+        <field:input field="SLocMax" id="c_com_vmi_domain_StockLocation_SLocMax" validationMessageCode="field_invalid_integer" z="hqziU592wz1ugbwUo0ijam3siGQ="/>
+        <field:select field="ItemCode" id="c_com_vmi_domain_StockLocation_ItemCode" itemValue="id" items="${items}" path="/items" z="UzZJD3sYYm8oA2V2eOnemHFQ0x8="/>
+    </form:update>
+</div>

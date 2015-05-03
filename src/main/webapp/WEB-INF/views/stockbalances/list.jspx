@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_StockBalance" items="${stockbalances}" z="Yaow3m6NIDNLnaOr0UQeDOCaAPs=">
+        <table:table data="${stockbalances}" id="l_com_vmi_domain_StockBalance" path="/stockbalances" z="hLFplf/gF+d0NVxgJjbNv8ga52Y=">
+            <table:column id="c_com_vmi_domain_StockBalance_createdBy" property="createdBy" z="Nt9GddBQvvlpUPG50GPP9H98X6w="/>
+            <table:column id="c_com_vmi_domain_StockBalance_updatedBy" property="updatedBy" z="hdpNgq4QfTsSktyPvUZXOUwB65c="/>
+            <table:column date="true" dateTimePattern="${stockBalance_createddate_date_format}" id="c_com_vmi_domain_StockBalance_createdDate" property="createdDate" z="JkYqHPEH0mZc4lv5ZoLzvMK6OPM="/>
+            <table:column date="true" dateTimePattern="${stockBalance_updateddate_date_format}" id="c_com_vmi_domain_StockBalance_updatedDate" property="updatedDate" z="I1LtqobJw/qVh/qnSUKt+nazrIg="/>
+            <table:column date="true" dateTimePattern="${stockBalance_sbaldate_date_format}" id="c_com_vmi_domain_StockBalance_SBalDate" property="SBalDate" z="6LtKVz1qFKaHRRRLXCXbWmHlrA4="/>
+            <table:column id="c_com_vmi_domain_StockBalance_SBalQuantity" property="SBalQuantity" z="zemveROCWErlBKbgxG86+iqyrb0="/>
+        </table:table>
+    </page:list>
+</div>

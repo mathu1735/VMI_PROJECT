@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_EstimateUsage" items="${estimateusages}" z="zXdjO8OyunPWSi9nrCQGFPx6w+Y=">
+        <table:table data="${estimateusages}" id="l_com_vmi_domain_EstimateUsage" path="/estimateusages" z="y2j+g/w1wdzTRJ5DYTsp+wkLJls=">
+            <table:column id="c_com_vmi_domain_EstimateUsage_createdBy" property="createdBy" z="jzvUL3l+ISeEdyFPlUmWAzydoBM="/>
+            <table:column id="c_com_vmi_domain_EstimateUsage_updatedBy" property="updatedBy" z="B9q1OaBYmlcSmrDcrBaok7d5vYE="/>
+            <table:column date="true" dateTimePattern="${estimateUsage_createddate_date_format}" id="c_com_vmi_domain_EstimateUsage_createdDate" property="createdDate" z="4YpDncQK0nh0ZdSi7Xc3AwjZfzQ="/>
+            <table:column date="true" dateTimePattern="${estimateUsage_updateddate_date_format}" id="c_com_vmi_domain_EstimateUsage_updatedDate" property="updatedDate" z="YXvZOldyDJGojWI4wm1I6fUZ8Ig="/>
+            <table:column date="true" dateTimePattern="${estimateUsage_estistartdate_date_format}" id="c_com_vmi_domain_EstimateUsage_EstiStartDate" property="estiStartDate" z="1Sn2qEXiRA7DsfBZTlzbSmJPYoI="/>
+            <table:column id="c_com_vmi_domain_EstimateUsage_EstiQ1" property="estiQ1" z="DpoAbrk8cYfAHNEYz2/paAnswu4="/>
+        </table:table>
+    </page:list>
+</div>

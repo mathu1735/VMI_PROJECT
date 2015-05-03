@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_StockLocation" items="${stocklocations}" z="/MRRYO3SCgZ6dp4+o9p0WNrmH5M=">
+        <table:table data="${stocklocations}" id="l_com_vmi_domain_StockLocation" path="/stocklocations" z="OWHwjEa9tHapGBhajaFSMvRIcfA=">
+            <table:column id="c_com_vmi_domain_StockLocation_createdBy" property="createdBy" z="x785LZP2lXPBJpI9CkA+cmzROq8="/>
+            <table:column id="c_com_vmi_domain_StockLocation_updatedBy" property="updatedBy" z="NYW617gQEDgGMgQK9bYXd3cuCjU="/>
+            <table:column date="true" dateTimePattern="${stockLocation_createddate_date_format}" id="c_com_vmi_domain_StockLocation_createdDate" property="createdDate" z="s04avj5jgzBjP2gI56S63h9rVuE="/>
+            <table:column date="true" dateTimePattern="${stockLocation_updateddate_date_format}" id="c_com_vmi_domain_StockLocation_updatedDate" property="updatedDate" z="F3+HxyqoqqJIHVzckNF6rpEyh9I="/>
+            <table:column id="c_com_vmi_domain_StockLocation_SLocName" property="SLocName" z="T/BmEQMSqZ605VYjOpMi60hfsZs="/>
+            <table:column id="c_com_vmi_domain_StockLocation_SLocCode" property="SLocCode" z="zoLlIdcFrPTdKvgnz8p8eZQQQRg="/>
+        </table:table>
+    </page:list>
+</div>

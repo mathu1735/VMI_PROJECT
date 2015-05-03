@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_StockLocation" object="${stocklocation}" path="/stocklocations" z="90KPH1gHPUOSmWuDt9Uzifgw4Iw=">
+        <field:display field="createdBy" id="s_com_vmi_domain_StockLocation_createdBy" object="${stocklocation}" z="HdaSYPSIKm9Bqa/aQHviFqRGoas="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_StockLocation_updatedBy" object="${stocklocation}" z="B29ue6U5jPHNNyV4UcYp40FoXMA="/>
+        <field:display date="true" dateTimePattern="${stockLocation_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_StockLocation_createdDate" object="${stocklocation}" z="p9FiVDjuOkf9TYG3yR8+rhK6BZo="/>
+        <field:display date="true" dateTimePattern="${stockLocation_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_StockLocation_updatedDate" object="${stocklocation}" z="xIIYA+4jVTpeqJWMeKQb79SCIBY="/>
+        <field:display field="SLocName" id="s_com_vmi_domain_StockLocation_SLocName" object="${stocklocation}" z="ogxboofS9P7FswQuH82U6u97ndI="/>
+        <field:display field="SLocCode" id="s_com_vmi_domain_StockLocation_SLocCode" object="${stocklocation}" z="1hqQZUDhSseMzPhIWzW0r6PdmPQ="/>
+        <field:display field="SLocCurrentQuantity" id="s_com_vmi_domain_StockLocation_SLocCurrentQuantity" object="${stocklocation}" z="4sWDUIxDGOsOFKldEedHtBH+ZxE="/>
+        <field:display field="SLocMin" id="s_com_vmi_domain_StockLocation_SLocMin" object="${stocklocation}" z="QYB6yjj1JD5uF5c8A6w3zk0f43k="/>
+        <field:display field="SLocMax" id="s_com_vmi_domain_StockLocation_SLocMax" object="${stocklocation}" z="I+Pv6UtF2WysCoDnH0KO4hBgwUQ="/>
+        <field:display field="itemCode" id="s_com_vmi_domain_StockLocation_ItemCode" object="${stocklocation}" z="4MFW8cGz6bVs5oWc/z/wlSavR1E="/>
+    </page:show>
+</div>

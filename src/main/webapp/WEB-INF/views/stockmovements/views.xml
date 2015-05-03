@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="stockmovements/list">
+        <put-attribute name="body" value="/WEB-INF/views/stockmovements/list.jspx"/>
+    </definition>
+<definition extends="default" name="stockmovements/show">
+        <put-attribute name="body" value="/WEB-INF/views/stockmovements/show.jspx"/>
+    </definition>
+<definition extends="default" name="stockmovements/create">
+        <put-attribute name="body" value="/WEB-INF/views/stockmovements/create.jspx"/>
+    </definition>
+<definition extends="default" name="stockmovements/update">
+        <put-attribute name="body" value="/WEB-INF/views/stockmovements/update.jspx"/>
+    </definition>
+    <definition extends="default" name="stockmovements/Stock">
+        <put-attribute name="body" value="/WEB-INF/views/stockmovements/StockMainPage.jspx"/>
+    </definition>
+    <definition extends="default" name="stockmovements/ImportData">
+        <put-attribute name="body" value="/WEB-INF/views/stockmovements/ImportDataMainPage.jspx"/>
+    </definition>
+</tiles-definitions>

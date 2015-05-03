@@ -1,0 +1,42 @@
+<div id="header" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+  <jsp:directive.page contentType="text/html;charset=UTF-8" />
+  <jsp:output omit-xml-declaration="yes" />
+
+ <!--  <spring:url var="banner" value="/resources/images/banner-graphic.png" />
+  <spring:url var="home" value="/" />
+  <spring:message code="button_home" var="home_label" htmlEscape="false" />
+  <a href="${home}" name="${fn:escapeXml(home_label)}" title="${fn:escapeXml(home_label)}">
+    <img src="${banner}" />
+  </a> -->
+
+   <jsp:useBean class="java.util.Date" id="now" scope="request" />
+    <c:set var="lang" value="${fn:toUpperCase(pageContext.response.locale)}" scope="request" />
+    <c:set var="user" value="${pageContext.request.userPrincipal.name}" scope="request" />
+
+    <style type="text/css">
+      .ui-datepicker{z-index:1151 !important;}
+      textarea {
+        resize: none;
+      }
+    </style>
+
+    <div class="dv-background" style="display: none;">
+        <div class="dv-loading">
+            <spring:url value="/resources/images/ess-loader.png" var="image_loader_url" />
+            <div class="image-contain" style="background-image: url(${image_loader_url}); width:30px;height:30px;">
+                <jsp:text/>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var session = {
+            date: new Date(Number("${now.time}")).setHours(0,0,0,0),    // the current date without time
+            time: new Date(Number("${now.time}")),                      // the current date with time
+            user: "${user}",                                            // the session user
+            lang: "${lang}",                                            // the language is page language
+            other: [],                                                  // the other use for create request for other
+            context: '/' + (window.location.pathname.split('/')[1])     // the context path
+        };
+    </script>
+</div> 

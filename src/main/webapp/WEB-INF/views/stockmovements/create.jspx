@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_vmi_domain_StockMovement" modelAttribute="stockMovement" path="/stockmovements" render="${empty dependencies}" z="fUes6+z0umupTysfDJ1s5i5+a8I=">
+        <field:input field="createdBy" id="c_com_vmi_domain_StockMovement_createdBy" z="HKAGqsXnRGSammVQnLhabKzTm3Q="/>
+        <field:input field="updatedBy" id="c_com_vmi_domain_StockMovement_updatedBy" z="ts/lcmqFby9ymy0VCT4K2w5/1Ew="/>
+        <field:datetime dateTimePattern="${stockMovement_createddate_date_format}" field="createdDate" id="c_com_vmi_domain_StockMovement_createdDate" z="6is5vo0/Y2sIk3l+expeKfoQLi8="/>
+        <field:datetime dateTimePattern="${stockMovement_updateddate_date_format}" field="updatedDate" id="c_com_vmi_domain_StockMovement_updatedDate" z="XHTU5NWsGG/feHqpobA0wd8hY/I="/>
+        <field:input field="SMovStatusCode" id="c_com_vmi_domain_StockMovement_SMovStatusCode" z="e7CMmLSa8W++rsKSdWtKcHHeMwc="/>
+        <field:input field="SMovQuantity" id="c_com_vmi_domain_StockMovement_SMovQuantity" validationMessageCode="field_invalid_number" z="OCCCOSuN9iGiwgCH/kJRuNe2edE="/>
+        <field:select field="SLocCode" id="c_com_vmi_domain_StockMovement_SLocCode" itemValue="id" items="${stocklocations}" path="/stocklocations" z="hd/y1jhk6Za67jE8b7LORZq9c+I="/>
+        <field:datetime dateTimePattern="${stockMovement_smovdate_date_format}" field="SMovDate" id="c_com_vmi_domain_StockMovement_SMovDate" z="lzm80tjRGjZHDYOzsrlNHRqsYIc="/>
+        <field:select field="POCode" id="c_com_vmi_domain_StockMovement_POCode" itemValue="id" items="${purchaseorders}" path="/purchaseorders" z="Ec9KHeztnlMxMnqNKj1GSrLrRXI="/>
+        <field:input field="SMovBalance" id="c_com_vmi_domain_StockMovement_SMovBalance" validationMessageCode="field_invalid_number" z="gLmJj8k6OcDJ+qm+d3bAvlbjYLE="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_vmi_domain_StockMovement" render="${not empty dependencies}" z="eEiZkGL1sd0QNsNclIvlZaC7rQA="/>
+</div>

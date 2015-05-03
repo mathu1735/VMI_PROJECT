@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_POTransaction" object="${potransaction_}" path="/potransactions" z="Ubz/o7GCnYM1OECZ8MRv3BGXcWk=">
+        <field:display field="createdBy" id="s_com_vmi_domain_POTransaction_createdBy" object="${potransaction_}" z="oc8QEaLRvI7KJUjviKstnvdF4Kc="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_POTransaction_updatedBy" object="${potransaction_}" z="E8hVcDNI/CI2pTddQqdZ5gegm4o="/>
+        <field:display date="true" dateTimePattern="${POTransaction__createddate_date_format}" field="createdDate" id="s_com_vmi_domain_POTransaction_createdDate" object="${potransaction_}" z="JquWlepY1K0BQeL1n0Tp5oveYNE="/>
+        <field:display date="true" dateTimePattern="${POTransaction__updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_POTransaction_updatedDate" object="${potransaction_}" z="EC7FCiy+C3GtRGPFgmEgrwoSuRE="/>
+        <field:display date="true" dateTimePattern="${POTransaction__potrandate_date_format}" field="POTranDate" id="s_com_vmi_domain_POTransaction_POTranDate" object="${potransaction_}" z="F0dPei/FaKLWUY8ZMOMe/2H/Ptg="/>
+        <field:display field="POTranStatusCode" id="s_com_vmi_domain_POTransaction_POTranStatusCode" object="${potransaction_}" z="eheTVTAIkwHJ0oy6shHGIK4pqCM="/>
+        <field:display field="POTranDesc" id="s_com_vmi_domain_POTransaction_POTranDesc" object="${potransaction_}" z="pY20Tkm//ENP904sPMcb1YcRHQ0="/>
+        <field:display field="POTranQuantity" id="s_com_vmi_domain_POTransaction_POTranQuantity" object="${potransaction_}" z="RPxOJN0YwYfVhJwWTM8dOLKJtQ8="/>
+    </page:show>
+</div>

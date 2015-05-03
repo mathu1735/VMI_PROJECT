@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_vmi_domain_EstimateUsage" modelAttribute="estimateUsage" path="/estimateusages" versionField="Version" z="QOlIlBN53DJ0sYa6BPo1asMf6Eo=">
+        <field:input field="createdBy" id="c_com_vmi_domain_EstimateUsage_createdBy" z="NL61ejT0N8BySZ2ah1nIVS54hn0="/>
+        <field:input field="updatedBy" id="c_com_vmi_domain_EstimateUsage_updatedBy" z="PBi5cxc3LmUsG8MoS3sg6DeQd1Q="/>
+        <field:datetime dateTimePattern="${estimateUsage_createddate_date_format}" field="createdDate" id="c_com_vmi_domain_EstimateUsage_createdDate" z="E2mYPn6uG95d1XAxoBiLT2oPlRA="/>
+        <field:datetime dateTimePattern="${estimateUsage_updateddate_date_format}" field="updatedDate" id="c_com_vmi_domain_EstimateUsage_updatedDate" z="3OWELukE/6U8cDpGboK8bmNDL98="/>
+        <field:datetime dateTimePattern="${estimateUsage_estistartdate_date_format}" field="EstiStartDate" id="c_com_vmi_domain_EstimateUsage_EstiStartDate" z="K8CpH/aVgIiA0waeVh3VeW/oslw="/>
+        <field:input field="EstiQ1" id="c_com_vmi_domain_EstimateUsage_EstiQ1" validationMessageCode="field_invalid_number" z="ZZ1D6BhZtT6Vk3QoqWGBxVjRpVg="/>
+        <field:input field="EstiQ2" id="c_com_vmi_domain_EstimateUsage_EstiQ2" validationMessageCode="field_invalid_number" z="veF4kJSQbDfLUW3BXwbS/RlpBhs="/>
+        <field:input field="EstiQ3" id="c_com_vmi_domain_EstimateUsage_EstiQ3" validationMessageCode="field_invalid_number" z="mtnXVZLgVqXbV5RcKSL3LBGJ0Hc="/>
+        <field:input field="EstiQ4" id="c_com_vmi_domain_EstimateUsage_EstiQ4" validationMessageCode="field_invalid_number" z="opX5fLn+a4w/BZgER4+9XpqjxZc="/>
+        <field:input field="EstiQ5" id="c_com_vmi_domain_EstimateUsage_EstiQ5" validationMessageCode="field_invalid_number" z="mn7KAEV1FF/acSiSCegag8EzH/0="/>
+        <field:input field="EstiQ6" id="c_com_vmi_domain_EstimateUsage_EstiQ6" validationMessageCode="field_invalid_number" z="HxWm2l58RscHg8+nw7AxQJ6Md+k="/>
+        <field:input field="EstiQ7" id="c_com_vmi_domain_EstimateUsage_EstiQ7" validationMessageCode="field_invalid_number" z="mrqlBySS7SUMO+/8Id8jd4niLl0="/>
+    </form:update>
+</div>
