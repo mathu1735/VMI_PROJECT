@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.19, for linux-glibc2.5 (x86_64)
+-- MySQL dump 10.13  Distrib 5.6.23, for Win64 (x86_64)
 --
--- Host: localhost    Database: vmi
+-- Host: 127.0.0.1    Database: vmi
 -- ------------------------------------------------------
--- Server version	5.6.19-0ubuntu0.14.04.1
+-- Server version 5.5.21
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -14,6 +14,37 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `delivery_plan`
+--
+
+DROP TABLE IF EXISTS `delivery_plan`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `delivery_plan` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_by` varchar(255) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `updated_by` varchar(255) DEFAULT NULL,
+  `updated_date` datetime DEFAULT NULL,
+  `version` int(11) DEFAULT NULL,
+  `deli_date` datetime DEFAULT NULL,
+  `delipocode` varchar(255) DEFAULT NULL,
+  `deli_quantity` double DEFAULT NULL,
+  `deli_status` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `delivery_plan`
+--
+
+LOCK TABLES `delivery_plan` WRITE;
+/*!40000 ALTER TABLE `delivery_plan` DISABLE KEYS */;
+/*!40000 ALTER TABLE `delivery_plan` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `estimate_usage`
@@ -51,34 +82,64 @@ LOCK TABLES `estimate_usage` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `potransaction`
+-- Table structure for table `interface_import_stock`
 --
 
-DROP TABLE IF EXISTS `potransaction`;
+DROP TABLE IF EXISTS `interface_import_stock`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `potransaction` (
+CREATE TABLE `interface_import_stock` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `created_by` varchar(255) DEFAULT NULL,
   `created_date` datetime DEFAULT NULL,
   `updated_by` varchar(255) DEFAULT NULL,
   `updated_date` datetime DEFAULT NULL,
   `version` int(11) DEFAULT NULL,
-  `potran_date` datetime DEFAULT NULL,
-  `potran_desc` varchar(255) DEFAULT NULL,
-  `potran_quantity` double DEFAULT NULL,
-  `potran_status_code` varchar(255) DEFAULT NULL,
+  `inf_date` datetime DEFAULT NULL,
+  `inf_location_code` varchar(255) DEFAULT NULL,
+  `inf_movement_type` varchar(255) DEFAULT NULL,
+  `inf_quantity` double DEFAULT NULL,
+  `inf_refpo` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `potransaction`
+-- Dumping data for table `interface_import_stock`
 --
 
-LOCK TABLES `potransaction` WRITE;
-/*!40000 ALTER TABLE `potransaction` DISABLE KEYS */;
-/*!40000 ALTER TABLE `potransaction` ENABLE KEYS */;
+LOCK TABLES `interface_import_stock` WRITE;
+/*!40000 ALTER TABLE `interface_import_stock` DISABLE KEYS */;
+/*!40000 ALTER TABLE `interface_import_stock` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `item`
+--
+
+DROP TABLE IF EXISTS `item`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `item` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_by` varchar(255) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `updated_by` varchar(255) DEFAULT NULL,
+  `updated_date` datetime DEFAULT NULL,
+  `version` int(11) DEFAULT NULL,
+  `item_code` varchar(255) DEFAULT NULL,
+  `item_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `item`
+--
+
+LOCK TABLES `item` WRITE;
+/*!40000 ALTER TABLE `item` DISABLE KEYS */;
+/*!40000 ALTER TABLE `item` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -101,7 +162,7 @@ CREATE TABLE `purchase_order` (
   `poquantity` double DEFAULT NULL,
   `pousage_quantity` double DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,8 +171,41 @@ CREATE TABLE `purchase_order` (
 
 LOCK TABLES `purchase_order` WRITE;
 /*!40000 ALTER TABLE `purchase_order` DISABLE KEYS */;
-INSERT INTO `purchase_order` VALUES (1,NULL,NULL,NULL,NULL,0,NULL,'1900060146',NULL,NULL,NULL),(2,NULL,NULL,NULL,NULL,0,NULL,'1900061404',NULL,NULL,NULL),(3,NULL,NULL,NULL,NULL,0,NULL,'1900061569',NULL,NULL,NULL),(4,NULL,NULL,NULL,NULL,NULL,NULL,'1900062025',NULL,NULL,NULL),(5,NULL,NULL,NULL,NULL,NULL,NULL,'1900062581',NULL,NULL,NULL),(6,NULL,NULL,NULL,NULL,NULL,NULL,'1900062771',NULL,NULL,NULL);
+INSERT INTO `purchase_order` VALUES (1,NULL,NULL,NULL,NULL,0,NULL,'1900060146',NULL,NULL,NULL),(2,NULL,NULL,NULL,NULL,0,NULL,'1900061404',NULL,NULL,NULL),(3,NULL,NULL,NULL,NULL,0,NULL,'1900061569',NULL,NULL,NULL),(4,NULL,NULL,NULL,NULL,NULL,NULL,'1900062025',NULL,NULL,NULL),(5,NULL,NULL,NULL,NULL,NULL,NULL,'1900062581',NULL,NULL,NULL),(6,NULL,NULL,NULL,NULL,NULL,NULL,'1900062771',NULL,NULL,NULL),(7,NULL,NULL,NULL,NULL,0,NULL,'1900000000',NULL,0,NULL);
 /*!40000 ALTER TABLE `purchase_order` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `purchase_order_balance`
+--
+
+DROP TABLE IF EXISTS `purchase_order_balance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `purchase_order_balance` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_by` varchar(255) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `updated_by` varchar(255) DEFAULT NULL,
+  `updated_date` datetime DEFAULT NULL,
+  `version` int(11) DEFAULT NULL,
+  `pobal_date` datetime DEFAULT NULL,
+  `pobal_quantity` double DEFAULT NULL,
+  `pobal_usage_quantity` double DEFAULT NULL,
+  `pocode` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_adgmw2k7t2gxwvlu4oy0xv4mx` (`pocode`),
+  CONSTRAINT `FK_adgmw2k7t2gxwvlu4oy0xv4mx` FOREIGN KEY (`pocode`) REFERENCES `purchase_order` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `purchase_order_balance`
+--
+
+LOCK TABLES `purchase_order_balance` WRITE;
+/*!40000 ALTER TABLE `purchase_order_balance` DISABLE KEYS */;
+/*!40000 ALTER TABLE `purchase_order_balance` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -133,7 +227,10 @@ CREATE TABLE `purchase_order_delivery` (
   `podreq_date` datetime DEFAULT NULL,
   `podreq_quantity` double DEFAULT NULL,
   `podrequest_quantity` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `pocode` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_i8vyxoe2h5d78s6wgp5tvx6wx` (`pocode`),
+  CONSTRAINT `FK_i8vyxoe2h5d78s6wgp5tvx6wx` FOREIGN KEY (`pocode`) REFERENCES `purchase_order` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -144,6 +241,67 @@ CREATE TABLE `purchase_order_delivery` (
 LOCK TABLES `purchase_order_delivery` WRITE;
 /*!40000 ALTER TABLE `purchase_order_delivery` DISABLE KEYS */;
 /*!40000 ALTER TABLE `purchase_order_delivery` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `request_delivery_plan`
+--
+
+DROP TABLE IF EXISTS `request_delivery_plan`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `request_delivery_plan` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_by` varchar(255) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `updated_by` varchar(255) DEFAULT NULL,
+  `updated_date` datetime DEFAULT NULL,
+  `version` int(11) DEFAULT NULL,
+  `req_deli_date` datetime DEFAULT NULL,
+  `req_deli_quantity` double DEFAULT NULL,
+  `req_deli_request_date` datetime DEFAULT NULL,
+  `req_deli_status` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `request_delivery_plan`
+--
+
+LOCK TABLES `request_delivery_plan` WRITE;
+/*!40000 ALTER TABLE `request_delivery_plan` DISABLE KEYS */;
+/*!40000 ALTER TABLE `request_delivery_plan` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `stock_balance`
+--
+
+DROP TABLE IF EXISTS `stock_balance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `stock_balance` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_by` varchar(255) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `updated_by` varchar(255) DEFAULT NULL,
+  `updated_date` datetime DEFAULT NULL,
+  `version` int(11) DEFAULT NULL,
+  `sbal_date` datetime DEFAULT NULL,
+  `sbal_location_code` varchar(255) DEFAULT NULL,
+  `sbal_quantity` double DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `stock_balance`
+--
+
+LOCK TABLES `stock_balance` WRITE;
+/*!40000 ALTER TABLE `stock_balance` DISABLE KEYS */;
+/*!40000 ALTER TABLE `stock_balance` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -165,7 +323,10 @@ CREATE TABLE `stock_location` (
   `sloc_max` int(11) DEFAULT NULL,
   `sloc_min` int(11) DEFAULT NULL,
   `sloc_name` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `item_code` bigint(20) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_9hu2xbmj6iadps869vo1c2cof` (`item_code`),
+  CONSTRAINT `FK_9hu2xbmj6iadps869vo1c2cof` FOREIGN KEY (`item_code`) REFERENCES `item` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -175,7 +336,7 @@ CREATE TABLE `stock_location` (
 
 LOCK TABLES `stock_location` WRITE;
 /*!40000 ALTER TABLE `stock_location` DISABLE KEYS */;
-INSERT INTO `stock_location` VALUES (1,NULL,NULL,NULL,NULL,0,'2001',50000,54000,20000,'location1'),(2,NULL,NULL,NULL,NULL,0,'1100',10000,12000,5000,NULL),(3,NULL,NULL,NULL,NULL,0,'2300',10000,12000,3000,NULL),(4,NULL,NULL,NULL,NULL,0,'7000',20000,15000,3000,NULL),(5,NULL,NULL,NULL,NULL,0,'0000',10000,NULL,NULL,'location other');
+INSERT INTO `stock_location` VALUES (1,NULL,NULL,NULL,NULL,0,'2001',50000,54000,20000,'location1',NULL),(2,NULL,NULL,NULL,NULL,0,'1100',10000,12000,5000,NULL,NULL),(3,NULL,NULL,NULL,NULL,0,'2300',10000,12000,3000,NULL,NULL),(4,NULL,NULL,NULL,NULL,0,'7000',15000,15000,3000,NULL,NULL),(5,NULL,NULL,NULL,NULL,0,'0000',10000,NULL,NULL,'location other',NULL);
 /*!40000 ALTER TABLE `stock_location` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -226,4 +387,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-04-26 19:40:24
+-- Dump completed on 2015-05-03 18:36:39
