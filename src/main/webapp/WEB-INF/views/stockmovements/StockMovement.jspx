@@ -8,10 +8,10 @@
 				<thead>
 				  <tr>
 				    <th rowspan="2">Date</th>
-				    <th rowspan="2">Storage <br/>(Liter)</th>
+				    <th rowspan="2">Storage</th>
+				    <th rowspan="2">MovementType</th>
 				    <th rowspan="2">Usage <br/>(Liter)</th>
-				    <th rowspan="2">Grand total<br/>(Liter)</th>
-				    <th rowspan="2">Receive Plan <br/>(kg)</th>
+				    <th rowspan="2">Balance</th>
 				    <th rowspan="2">Ref. PO</th>
 				    <!-- <th rowspan="2">PO Balance<br/>(kg)</th> -->
 				  </tr>

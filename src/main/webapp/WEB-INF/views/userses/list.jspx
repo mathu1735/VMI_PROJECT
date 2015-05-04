@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_entity_Users" items="${userses}" z="4XZIYymvIKWjOHXWB9tBU0su3qE=">
+        <table:table data="${userses}" id="l_com_vmi_entity_Users" path="/userses" z="5v2p1DfrxQFiWjw4BUT8PuRkWBo=">
+            <table:column id="c_com_vmi_entity_Users_usernameDa" property="usernameDa" z="yzy8ZbZFL0R39bffnMrVsTy8BSE="/>
+            <table:column id="c_com_vmi_entity_Users_passwordDa" property="passwordDa" z="lzrXin7il6vmzfRVgxRaePkyTW4="/>
+            <table:column id="c_com_vmi_entity_Users_enabledDa" property="enabledDa" z="0xOChTmw6DKflZB8wbpNHGp5vbg="/>
+            <table:column id="c_com_vmi_entity_Users_roles" property="roles" z="ZZ+reXJiemkCpAGnxu/x5Wqn+sk="/>
+        </table:table>
+    </page:list>
+</div>
