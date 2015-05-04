@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_vmi_domain_MovementType" items="${movementtypes}" z="Khuji22dMnKi5PVkFBDdb8jWe88=">
+        <table:table data="${movementtypes}" id="l_com_vmi_domain_MovementType" path="/movementtypes" z="AxijXajgO3WjgkSB5kxhAFrPCrw=">
+            <table:column id="c_com_vmi_domain_MovementType_createdBy" property="createdBy" z="P/xP22yt2yGKsY47Qbvbo0m8S4I="/>
+            <table:column id="c_com_vmi_domain_MovementType_updatedBy" property="updatedBy" z="4GZOR6ZG2sw0oXr/IUwre56monU="/>
+            <table:column date="true" dateTimePattern="${movementType_createddate_date_format}" id="c_com_vmi_domain_MovementType_createdDate" property="createdDate" z="0mV5ehjrj69LVTUy9LHFkk9bB64="/>
+            <table:column date="true" dateTimePattern="${movementType_updateddate_date_format}" id="c_com_vmi_domain_MovementType_updatedDate" property="updatedDate" z="Q+9Prhb62prH5LP3IfmxIL+SCKw="/>
+            <table:column id="c_com_vmi_domain_MovementType_MoveName" property="moveName" z="QWxS8UOCGzPN3w5E3SuRw+w8Ok0="/>
+            <table:column id="c_com_vmi_domain_MovementType_MoveCode" property="moveCode" z="PImFisMf75ibnmaTfercRRbOtis="/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_vmi_domain_MovementType" object="${movementtype}" path="/movementtypes" z="14qYSs0o29KKPV9I9rEFV6P+scc=">
+        <field:display field="createdBy" id="s_com_vmi_domain_MovementType_createdBy" object="${movementtype}" z="4RBson9RfQ2nRhhh6vfQAmwdBU8="/>
+        <field:display field="updatedBy" id="s_com_vmi_domain_MovementType_updatedBy" object="${movementtype}" z="Ru26Xk5q/MxSm4D25Rd1q9zP5dY="/>
+        <field:display date="true" dateTimePattern="${movementType_createddate_date_format}" field="createdDate" id="s_com_vmi_domain_MovementType_createdDate" object="${movementtype}" z="FbRq0uW5qjuglZl+nOjL5jus48w="/>
+        <field:display date="true" dateTimePattern="${movementType_updateddate_date_format}" field="updatedDate" id="s_com_vmi_domain_MovementType_updatedDate" object="${movementtype}" z="Btszde7/V5o5jVcvgw8Zwyhf/aU="/>
+        <field:display field="moveName" id="s_com_vmi_domain_MovementType_MoveName" object="${movementtype}" z="Xha+fkgsxwmoaXa7lBMOIz4shFc="/>
+        <field:display field="moveCode" id="s_com_vmi_domain_MovementType_MoveCode" object="${movementtype}" z="bxJwDR6D14Yj6NuDkScv+vFVaCI="/>
+    </page:show>
+</div>
