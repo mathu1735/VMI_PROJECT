@@ -4,8 +4,12 @@
     <jsp:output omit-xml-declaration="yes"/>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
+
             <li class="sidebar-brand">
                 <a href="http://localhost:8080/vmi">Main</a>
+            </li>
+            <li>
+                <a href="http://localhost:8080/vmi/deliveryplans/Plan">Plan</a>
             </li>
             <li>
                 <a href="http://localhost:8080/vmi/stockmovements/Stock">Stock</a>
@@ -19,67 +23,8 @@
             <li>
                 <a href="http://localhost:8080/vmi/stocklocations/StockLocation">Add/Edit Location</a>
             </li>
-            <li>
-                <a href="#">Plan</a>
-            </li>
+            
         </ul>
     </div>
-    <!-- <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
-        <menu:category id="c_deliveryplan" z="kgUgZtiarT/VzAxQdbsV7XN29r4=">
-            <menu:item id="i_deliveryplan_new" messageCode="global_menu_new" url="/deliveryplans?form" z="w7xihJ/LO7Z0o9CM6UZhukoX1d8="/>
-            <menu:item id="i_deliveryplan_list" messageCode="global_menu_list" url="/deliveryplans?page=1&amp;size=${empty param.size ? 10 : param.size}" z="nMXv2KvbrkW/0h/3rKdOiAqRjOI="/>
-        </menu:category>
-        <menu:category id="c_stocklocation" z="3O5ZprPrJb7xSIBn8invEt/5CCk=">
-            <menu:item id="i_stocklocation_new" messageCode="global_menu_new" url="/stocklocations?form" z="knjmIL7h3ut5AdzyVJzdHSUS/fg="/>
-            <menu:item id="i_stocklocation_list" messageCode="global_menu_list" url="/stocklocations?page=1&amp;size=${empty param.size ? 10 : param.size}" z="kxBI9A7503xfAOLFn10xuSHrAWQ="/>
-        </menu:category>
-        <menu:category id="c_purchaseorderbalance" z="Yr8KcA9rYNVkUAjKAe9JrMJMcrQ=">
-            <menu:item id="i_purchaseorderbalance_new" messageCode="global_menu_new" url="/purchaseorderbalances?form" z="+dxqVv5WyID+K3OHqI7nhtbmqe8="/>
-            <menu:item id="i_purchaseorderbalance_list" messageCode="global_menu_list" url="/purchaseorderbalances?page=1&amp;size=${empty param.size ? 10 : param.size}" z="89dYEEnOJuDrDVEAsiIi6tHEfNU="/>
-        </menu:category>
-        <menu:category id="c_movementtype" z="55Ix48Ssu3ZIx6eI82CxUxbP1Sw=">
-            <menu:item id="i_movementtype_new" messageCode="global_menu_new" url="/movementtypes?form" z="Z5scsQAQkjAPPUQ82tNtlcNkvVY="/>
-            <menu:item id="i_movementtype_list" messageCode="global_menu_list" url="/movementtypes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="myGf7lpT7aiz7WuZ5O6ZtE1v6mM="/>
-        </menu:category>
-        <menu:category id="c_purchaseorderdelivery" z="oG6xzfe+E7wAk0LzUMu8aQ6z8p8=">
-            <menu:item id="i_purchaseorderdelivery_new" messageCode="global_menu_new" url="/purchaseorderdeliverys?form" z="g8lFSMnzXhugphszBGTIlnJIu4w="/>
-            <menu:item id="i_purchaseorderdelivery_list" messageCode="global_menu_list" url="/purchaseorderdeliverys?page=1&amp;size=${empty param.size ? 10 : param.size}" z="oMAieAdhNb3TiuebcMHeW7VDO3o="/>
-        </menu:category>
-        <menu:category id="c_purchaseorder" z="LdgN+Z53I4kIOyJx+mc8CFmbIuU=">
-            <menu:item id="i_purchaseorder_new" messageCode="global_menu_new" url="/purchaseorders?form" z="I6gpOtV3+H+iGlPgmv55Zhufszk="/>
-            <menu:item id="i_purchaseorder_list" messageCode="global_menu_list" url="/purchaseorders?page=1&amp;size=${empty param.size ? 10 : param.size}" z="DHer7WK9MJB49FXJX9B6Kds2DxY="/>
-        </menu:category>
-        <menu:category id="c_stockmovement" z="hlbPJ6GF49N10Hsu+RBg6RMSw5I=">
-            <menu:item id="i_stockmovement_new" messageCode="global_menu_new" url="/stockmovements?form" z="TG5PJjI/rjdCFX5KLWJ2Yt7bYos="/>
-            <menu:item id="i_stockmovement_list" messageCode="global_menu_list" url="/stockmovements?page=1&amp;size=${empty param.size ? 10 : param.size}" z="fBy4W13X1oMNFT25VaBA1FLvjBw="/>
-        </menu:category>
-        <menu:category id="c_requestdeliveryplan" z="iX4T1NrB+8IMig7Bt3ylmhHyB7Y=">
-            <menu:item id="i_requestdeliveryplan_new" messageCode="global_menu_new" url="/requestdeliveryplans?form" z="Usg3cNIJ64x6SDFwbo+Tt6bLYbE="/>
-            <menu:item id="i_requestdeliveryplan_list" messageCode="global_menu_list" url="/requestdeliveryplans?page=1&amp;size=${empty param.size ? 10 : param.size}" z="ZTS6o3inMgTuvl0vZ4EdMjYYKVs="/>
-        </menu:category>
-        <menu:category id="c_stockbalance" z="YDhYsxr5CZG2mbMcNiGXs+bj84A=">
-            <menu:item id="i_stockbalance_new" messageCode="global_menu_new" url="/stockbalances?form" z="fz3ydQ+PFLmUzSAs+s4hNViu4Fg="/>
-            <menu:item id="i_stockbalance_list" messageCode="global_menu_list" url="/stockbalances?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sEoJ1VCMYCWmmfi9wwIxcIJeY/U="/>
-        </menu:category>
-        <menu:category id="c_interfaceimportstock" z="B/67zWfikL6yivjNpvrCjT5Mj/4=">
-            <menu:item id="i_interfaceimportstock_new" messageCode="global_menu_new" url="/interfaceimportstocks?form" z="5WvUFE1cNvMPbuOhJ4CP1GtHVuU="/>
-            <menu:item id="i_interfaceimportstock_list" messageCode="global_menu_list" url="/interfaceimportstocks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="UI82ofiJn5SKeX9scHSlFCHnQVI="/>
-        </menu:category>
-        <menu:category id="c_estimateusage" z="MmJkz4gWIYlaYGuhS8amkvWQT3w=">
-            <menu:item id="i_estimateusage_new" messageCode="global_menu_new" url="/estimateusages?form" z="eZyXzZpqR3UQOsJ8RrqZEQ3nK/k="/>
-            <menu:item id="i_estimateusage_list" messageCode="global_menu_list" url="/estimateusages?page=1&amp;size=${empty param.size ? 10 : param.size}" z="QVfBaUKnBkxGwrcgJ9Z+L3HfVBI="/>
-        </menu:category>
-        <menu:category id="c_item" z="jWO1pnucyLwI2bZuwfja4eCYsjU=">
-            <menu:item id="i_item_new" messageCode="global_menu_new" url="/items?form" z="I+/MpOYxZ47XKvsQW1PUi6uC060="/>
-            <menu:item id="i_item_list" messageCode="global_menu_list" url="/items?page=1&amp;size=${empty param.size ? 10 : param.size}" z="4RxBMvjr2gUD8qO0DTWmjd1SzS0="/>
-        </menu:category>
-        <menu:category id="c_roles" z="rs8zfmLS6SJZoIvFFQfrlrSaJVU=">
-            <menu:item id="i_roles_new" messageCode="global_menu_new" url="/roleses?form" z="3pwVBouHLA1zzuNbxsmScZYd3Ow="/>
-            <menu:item id="i_roles_list" messageCode="global_menu_list" url="/roleses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="hajFcKWAQ9yfIfMWvLv3ooTzCFE="/>
-        </menu:category>
-        <menu:category id="c_users" z="Ysam8XVhG5uotPoUGGxkia1RE/s=">
-            <menu:item id="i_users_new" messageCode="global_menu_new" url="/userses?form" z="utrdLkYms6xk5f4IDxc9zrg5FWs="/>
-            <menu:item id="i_users_list" messageCode="global_menu_list" url="/userses?page=1&amp;size=${empty param.size ? 10 : param.size}" z="tqSwojZmRduyx4xtHWcJzgbgtJk="/>
-        </menu:category>
-    </menu:menu> -->
+    
 </div>
