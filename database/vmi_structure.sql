@@ -143,6 +143,36 @@ LOCK TABLES `item` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `movement_type`
+--
+
+DROP TABLE IF EXISTS `movement_type`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `movement_type` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `created_by` varchar(255) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  `updated_by` varchar(255) DEFAULT NULL,
+  `updated_date` datetime DEFAULT NULL,s
+  `version` int(11) DEFAULT NULL,
+  `move_code` varchar(255) DEFAULT NULL,
+  `move_name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `movement_type`
+--
+
+LOCK TABLES `movement_type` WRITE;
+/*!40000 ALTER TABLE `movement_type` DISABLE KEYS */;
+INSERT INTO `movement_type` VALUES (1,NULL,NULL,NULL,NULL,NULL,'101','receive'),(2,NULL,NULL,NULL,NULL,NULL,'102','adjust receive'),(3,NULL,NULL,NULL,NULL,NULL,'201','used'),(4,NULL,NULL,NULL,NULL,NULL,'202','adjust used');
+/*!40000 ALTER TABLE `movement_type` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `purchase_order`
 --
 
@@ -387,4 +417,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-05-03 18:36:39
+-- Dump completed on 2015-05-04 13:46:38
