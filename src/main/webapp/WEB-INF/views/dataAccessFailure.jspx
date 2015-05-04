@@ -2,10 +2,11 @@
   <jsp:directive.page contentType="text/html;charset=UTF-8" />
   <jsp:output omit-xml-declaration="yes" />
   <spring:message var="title" code="error_dataaccessfailure_title" htmlEscape="false" />
-  <util:panel id="title" title="${title}">
+  <util:panel id="title" title="Failure..!!">
     <h2>${fn:escapeXml(title)}</h2>
     <p>
-      <spring:message code="error_dataaccessfailure_problemdescription" />
+      <!-- <spring:message code="error_dataaccessfailure_problemdescription" /> -->
+      Sorry, a problem occurred while accessing.
     </p>
     <c:if test="${not empty exception}">
       <p>
@@ -27,4 +28,3 @@
     </c:if>
   </util:panel>
 </div>
-

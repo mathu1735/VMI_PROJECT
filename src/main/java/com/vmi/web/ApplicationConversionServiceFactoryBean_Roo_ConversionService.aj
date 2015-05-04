@@ -7,6 +7,7 @@ import com.vmi.domain.DeliveryPlan;
 import com.vmi.domain.EstimateUsage;
 import com.vmi.domain.InterfaceImportStock;
 import com.vmi.domain.Item;
+import com.vmi.domain.MovementType;
 import com.vmi.domain.PurchaseOrder;
 import com.vmi.domain.PurchaseOrderBalance;
 import com.vmi.domain.PurchaseOrderDelivery;
@@ -14,6 +15,8 @@ import com.vmi.domain.RequestDeliveryPlan;
 import com.vmi.domain.StockBalance;
 import com.vmi.domain.StockLocation;
 import com.vmi.domain.StockMovement;
+import com.vmi.entity.Roles;
+import com.vmi.entity.Users;
 import com.vmi.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
@@ -115,6 +118,30 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         return new org.springframework.core.convert.converter.Converter<java.lang.String, com.vmi.domain.Item>() {
             public com.vmi.domain.Item convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), Item.class);
+            }
+        };
+    }
+    
+    public Converter<MovementType, String> ApplicationConversionServiceFactoryBean.getMovementTypeToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.vmi.domain.MovementType, java.lang.String>() {
+            public String convert(MovementType movementType) {
+                return new StringBuilder().append(movementType.getCreatedBy()).append(' ').append(movementType.getUpdatedBy()).append(' ').append(movementType.getCreatedDate()).append(' ').append(movementType.getUpdatedDate()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, MovementType> ApplicationConversionServiceFactoryBean.getIdToMovementTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.vmi.domain.MovementType>() {
+            public com.vmi.domain.MovementType convert(java.lang.Long id) {
+                return MovementType.findMovementType(id);
+            }
+        };
+    }
+    
+    public Converter<String, MovementType> ApplicationConversionServiceFactoryBean.getStringToMovementTypeConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.vmi.domain.MovementType>() {
+            public com.vmi.domain.MovementType convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), MovementType.class);
             }
         };
     }
@@ -287,6 +314,54 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         };
     }
     
+    public Converter<Roles, String> ApplicationConversionServiceFactoryBean.getRolesToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.vmi.entity.Roles, java.lang.String>() {
+            public String convert(Roles roles) {
+                return new StringBuilder().append(roles.getNameDa()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Roles> ApplicationConversionServiceFactoryBean.getIdToRolesConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.vmi.entity.Roles>() {
+            public com.vmi.entity.Roles convert(java.lang.Long id) {
+                return Roles.findRoles(id);
+            }
+        };
+    }
+    
+    public Converter<String, Roles> ApplicationConversionServiceFactoryBean.getStringToRolesConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.vmi.entity.Roles>() {
+            public com.vmi.entity.Roles convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Roles.class);
+            }
+        };
+    }
+    
+    public Converter<Users, String> ApplicationConversionServiceFactoryBean.getUsersToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.vmi.entity.Users, java.lang.String>() {
+            public String convert(Users users) {
+                return new StringBuilder().append(users.getUsernameDa()).append(' ').append(users.getPasswordDa()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Users> ApplicationConversionServiceFactoryBean.getIdToUsersConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.vmi.entity.Users>() {
+            public com.vmi.entity.Users convert(java.lang.Long id) {
+                return Users.findUsers(id);
+            }
+        };
+    }
+    
+    public Converter<String, Users> ApplicationConversionServiceFactoryBean.getStringToUsersConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.vmi.entity.Users>() {
+            public com.vmi.entity.Users convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Users.class);
+            }
+        };
+    }
+    
     public void ApplicationConversionServiceFactoryBean.installLabelConverters(FormatterRegistry registry) {
         registry.addConverter(getDeliveryPlanToStringConverter());
         registry.addConverter(getIdToDeliveryPlanConverter());
@@ -300,6 +375,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getItemToStringConverter());
         registry.addConverter(getIdToItemConverter());
         registry.addConverter(getStringToItemConverter());
+        registry.addConverter(getMovementTypeToStringConverter());
+        registry.addConverter(getIdToMovementTypeConverter());
+        registry.addConverter(getStringToMovementTypeConverter());
         registry.addConverter(getPurchaseOrderToStringConverter());
         registry.addConverter(getIdToPurchaseOrderConverter());
         registry.addConverter(getStringToPurchaseOrderConverter());
@@ -321,6 +399,12 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getStockMovementToStringConverter());
         registry.addConverter(getIdToStockMovementConverter());
         registry.addConverter(getStringToStockMovementConverter());
+        registry.addConverter(getRolesToStringConverter());
+        registry.addConverter(getIdToRolesConverter());
+        registry.addConverter(getStringToRolesConverter());
+        registry.addConverter(getUsersToStringConverter());
+        registry.addConverter(getIdToUsersConverter());
+        registry.addConverter(getStringToUsersConverter());
     }
     
     public void ApplicationConversionServiceFactoryBean.afterPropertiesSet() {

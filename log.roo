@@ -169,3 +169,21 @@ quit
 // Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-03 18:19:03
 quit
 // Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-03 18:19:22
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-04 14:08:39
+entity jpa --class ~.entity.Roles --testAutomatically
+field string --fieldName nameDa --notNull --sizeMax 50 --class ~.entity.Roles
+entity jpa --class ~.entity.Users --testAutomatically
+field string --fieldName usernameDa --notNull --sizeMin 3 --sizeMax 30
+field string --fieldName passwordDa --sizeMax 100
+field boolean --fieldName enabledDa --notNull true
+ field set --fieldName roles --type ~.entity.Roles --cardinality MANY_TO_MANY --class ~.entity.Users
+controller all --package ~.entity
+controller all --package ~.entity
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-04 14:16:43
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log opened at 2558-05-04 14:16:53
+controller all --package ~.entity
+web mvc all --package ~.entity
+security setup
+quit
+// Spring Roo 1.3.1.RELEASE [rev f4f5256] log closed at 2558-05-04 14:18:19
