@@ -12,5 +12,6 @@
         <field:input field="InfMovementType" id="c_com_vmi_domain_InterfaceImportStock_InfMovementType" z="kgWN66J809woqI63mynZoibEKg8="/>
         <field:input field="InfRefPO" id="c_com_vmi_domain_InterfaceImportStock_InfRefPO" z="yQo3Zp3XgY04bN+lPm9tM91brbU="/>
         <field:input field="InfQuantity" id="c_com_vmi_domain_InterfaceImportStock_InfQuantity" validationMessageCode="field_invalid_number" z="+yREEF4MxAGf/IZk6NkVXX/3uqs="/>
+        <field:input field="InfFileName" id="c_com_vmi_domain_InterfaceImportStock_InfFileName" z="yvHUC2X1Y5xgaDTCNNAkNkR+sOo="/>
     </form:update>
 </div>

@@ -48,4 +48,12 @@ privileged aspect InterfaceImportStock_Roo_JavaBean {
         this.InfQuantity = InfQuantity;
     }
     
+    public String InterfaceImportStock.getInfFileName() {
+        return this.InfFileName;
+    }
+    
+    public void InterfaceImportStock.setInfFileName(String InfFileName) {
+        this.InfFileName = InfFileName;
+    }
+    
 }

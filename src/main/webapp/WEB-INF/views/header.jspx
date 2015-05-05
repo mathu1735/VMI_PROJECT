@@ -20,7 +20,7 @@
       }
     </style>
 
-    <div class="dv-background" style="display: none;">
+<!--     <div class="dv-background" style="display: none;">
         <div class="dv-loading">
             <spring:url value="/resources/images/ess-loader.png" var="image_loader_url" />
             <div class="image-contain" style="background-image: url(${image_loader_url}); width:30px;height:30px;">
@@ -28,6 +28,7 @@
             </div>
         </div>
     </div>
+ -->
 
     <script>
         var session = {
@@ -39,4 +40,16 @@
             context: '/' + (window.location.pathname.split('/')[1])     // the context path
         };
     </script>
+
+    <div class="navbar navbar-fixed-top" style="margin-top: 0px; background-color: rgb(111, 154, 14); height: 69px; margin-left: 30px; margin-right: 30px; border-radius: 4px;">
+       <div class="col-sm-6">
+          <div class="col-sm-1">
+              <jsp:text/>
+          </div>
+          <div class="col-sm-11">
+              <font size="6" color="white">VMI for sodium hydroxide 32%</font>
+          </div>
+         
+       </div>
+    </div>
 </div> 

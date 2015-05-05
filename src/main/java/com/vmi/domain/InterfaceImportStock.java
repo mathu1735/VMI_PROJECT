@@ -36,4 +36,8 @@ public class InterfaceImportStock extends BaseEntity {
     /**
      */
     private Double InfQuantity;
+
+    /**
+     */
+    private String InfFileName;
 }

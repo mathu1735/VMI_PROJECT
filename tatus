@@ -1,0 +1,59 @@
+* [33mcommit 55ade541d4dcf18c80c2332f78a46ae43bdfd2cf[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Mon May 4 18:40:18 2015 +0700
+[31m|[m 
+[31m|[m     Add Plan page
+[31m|[m  
+* [33mcommit 708e1415d883d4b92dcc09538eb8c56313d9441c[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Mon May 4 16:23:38 2015 +0700
+[31m|[m 
+[31m|[m     edit error user entity and edit data_structure.sql
+[31m|[m  
+* [33mcommit c600d07262a5559d333f75bbde05021a8f09f118[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Mon May 4 15:25:51 2015 +0700
+[31m|[m 
+[31m|[m     add entity user
+[31m|[m  
+* [33mcommit 5fcc67752419aac0229649d47f4b34e5b3233aeb[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Mon May 4 13:50:07 2015 +0700
+[31m|[m 
+[31m|[m     edit data_structure.sql
+[31m|[m  
+* [33mcommit 1f191c71d4d906352269222ac9eeedbef1c610a4[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Mon May 4 13:43:27 2015 +0700
+[31m|[m 
+[31m|[m     add movementType class and edit stockMovement
+[31m|[m  
+* [33mcommit a18ab78b520f127555b64e29cb2acaf187b7afc4[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Sun May 3 18:38:04 2015 +0700
+[31m|[m 
+[31m|[m     edit vmi_structure.sql
+[31m|[m  
+* [33mcommit a9cc8f716c52e8fea2a1a14a156efc18c70df2f6[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Sun May 3 18:24:40 2015 +0700
+[31m|[m 
+[31m|[m     add entity InterfaceImportStock
+[31m|[m  
+* [33mcommit 7917eb0ac0303e6cf0107a3fdd296420e8ef09cf[m
+[31m|[m Author: Maturos Sriruan <os-mathuros_s@softsquaregroup.com>
+[31m|[m Date:   Sun May 3 16:58:22 2015 +0700
+[31m|[m 
+[31m|[m     edit database.properties
+[31m|[m  
+* [33mcommit 9cda4c885c29e88e4ca72bc2fc787c6d953c5450[m
+[31m|[m Author: Kritchanapak_j <kritchanapak_j@softsquaregroup.com>
+[31m|[m Date:   Sun May 3 16:53:11 2015 +0700
+[31m|[m 
+[31m|[m     fix .gitignore
+[31m|[m  
+* [33mcommit 32fe9feba5570c27fcd828f5b261a8cc3bf38fa7[m
+  Author: Kritchanapak_j <kritchanapak_j@softsquaregroup.com>
+  Date:   Sun May 3 16:39:42 2015 +0700
+  
+      first commit ver.7

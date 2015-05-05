@@ -25,10 +25,10 @@
 				  <tr>
 				    <th rowspan="2">Edit</th>
 				    <th rowspan="2">Date </th>
-				    <th rowspan="2">All Storage <br/></th>
+				    <th rowspan="2">All Storage <br/>(Liter)</th>
 				    <th rowspan="2">Estimate Usage<br/>(Liter)</th>
-				    <th rowspan="2">Delivery Plan <br/>(Liter)</th>
-				    <th rowspan="2">Amount</th>
+				    <th rowspan="2">Delivery Plan</th>
+				    <th rowspan="2">Amount <br/>(Liter)</th>
 				    <!-- <th rowspan="2">PO Balance<br/>(kg)</th> -->
 				  </tr>
 			
@@ -84,19 +84,72 @@
 						</div>
 						<div class="form-group">
 							<div class="col-sm-6">
-								<label class="col-sm-5 control-label">Estimate Usage</label>
+								<label class="col-sm-5 control-label">Estimate Usage Date1</label>
 								<div class="col-sm-5">
-									<input class="form-control" id="famLastName" required="required" maxlength="30"><jsp:text/></input>
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
 								</div>
 								<label class="col-sm-2 control-label">Liter</label>
 							</div>
-							<div class="col-sm-6"></div>
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date2</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date3</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date4</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date5</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date6</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date7</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							<div class="col-sm-6">
+								<jsp:text/>
+							</div>
 							
 						</div>
 					</div>
 					<div class="modal-footer">
 
-						<button id="btnSave" type="submit" class="btn btn-primary">save</button>
+						<button id="btnSaveEstimate" type="button" class="btn btn-primary">save</button>
 						<button id="btnCancel"  data-dismiss="modal"  type="button" class="btn btn-primary">cancel</button>
 		
 					</div>

@@ -4,12 +4,14 @@
     <jsp:output omit-xml-declaration="yes"/>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-
             <li class="sidebar-brand">
                 <a href="http://localhost:8080/vmi">Main</a>
             </li>
             <li>
                 <a href="http://localhost:8080/vmi/deliveryplans/Plan">Plan</a>
+            </li>
+             <li>
+                <a href="http://localhost:8080/vmi/stockmovements/ImportData">Import Usage</a>
             </li>
             <li>
                 <a href="http://localhost:8080/vmi/stockmovements/Stock">Stock</a>
@@ -17,14 +19,11 @@
             <li>
                 <a href="http://localhost:8080/vmi/purchaseorders/purchaseorder">PO</a>
             </li>
-            <li>
-                <a href="http://localhost:8080/vmi/stockmovements/ImportData">Import Usage</a>
-            </li>
+           
             <li>
                 <a href="http://localhost:8080/vmi/stocklocations/StockLocation">Add/Edit Location</a>
             </li>
-            
         </ul>
     </div>
-    
+    <!--  -->
 </div>

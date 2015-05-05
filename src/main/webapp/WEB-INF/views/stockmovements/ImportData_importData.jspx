@@ -8,7 +8,7 @@
 			<div class="col-sm-1"><jsp:text/></div>
 			<div class="col-sm-10">
 				<fieldset >
-					<legend >เพิ่มข้อมูลใบสั่งซื้อ</legend>
+					<legend >เพิ่มข้อมูลยอดรับ/ยอดใช้</legend>
 
 					<div class="form-group">
 						<div class="col-sm-9"><jsp:text/></div>
@@ -17,8 +17,8 @@
 				                นำเข้ายอดรับ/ยอดใช้ <input type="file" id="filename"/>
 				            </span> -->
 				            <input type="file" name="filename" id="filename">
-   								 <div id="csvimporthint"></div>
-   							</input>
+    							<div id="csvimporthint"></div>
+    						</input>
 				      <!--       <button id="btnImport" type="button" class="btn btn-primary">นำเข้ายอดรับ/ยอดใช้ </button> -->
 						</div>
 						<div class="col-sm-1"><jsp:text/></div>
@@ -46,7 +46,7 @@
 					<div class="form-group">
 						<div class="col-sm-5"><jsp:text/></div>
 						<div class="col-sm-1">
-							<button id="btnConfirm" type="button" class="btn btn-primary">Confirm</button>
+							<button id="btnConfirmImport" type="button" class="btn btn-primary">Confirm</button>
 						</div>
 						<div class="col-sm-1">
 							<button id="btnCancel" type="button" class="btn btn-primary">Cancel</button>

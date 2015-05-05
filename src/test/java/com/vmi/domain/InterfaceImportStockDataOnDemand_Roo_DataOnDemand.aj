@@ -30,6 +30,7 @@ privileged aspect InterfaceImportStockDataOnDemand_Roo_DataOnDemand {
         setCreatedBy(obj, index);
         setCreatedDate(obj, index);
         setInfDate(obj, index);
+        setInfFileName(obj, index);
         setInfLocationCode(obj, index);
         setInfMovementType(obj, index);
         setInfQuantity(obj, index);
@@ -52,6 +53,11 @@ privileged aspect InterfaceImportStockDataOnDemand_Roo_DataOnDemand {
     public void InterfaceImportStockDataOnDemand.setInfDate(InterfaceImportStock obj, int index) {
         Date InfDate = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
         obj.setInfDate(InfDate);
+    }
+    
+    public void InterfaceImportStockDataOnDemand.setInfFileName(InterfaceImportStock obj, int index) {
+        String InfFileName = "InfFileName_" + index;
+        obj.setInfFileName(InfFileName);
     }
     
     public void InterfaceImportStockDataOnDemand.setInfLocationCode(InterfaceImportStock obj, int index) {

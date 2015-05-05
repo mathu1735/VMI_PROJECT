@@ -3,9 +3,8 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8"/>
 	<jsp:output omit-xml-declaration="yes"/>
 
-	<li role="presentation"><a href="#ImportFile" aria-controls="ImportFile" role="tab" data-toggle="tab">นำเข้าไฟล์ยอดรับ/ยอดใช้</a></li>
-	<li role="presentation"><a href="#AddEstimate" aria-controls="AddEstimate" role="tab" data-toggle="tab">เพิ่มข้อมูลประมาณการใช้</a></li>
-	<li role="presentation"><a href="#AddPO" aria-controls="AddPO" role="tab" data-toggle="tab">เพิ่มข้อมูลใบสั่งซื้อ</a></li>
+	<li role="presentation"><a href="#ImportFile" aria-controls="ImportFile" role="tab" data-toggle="tab">Import csv file</a></li>
+	<li role="presentation"><a href="#AddPO" aria-controls="AddPO" role="tab" data-toggle="tab">Add purchase order</a></li>
 	
 	
 	

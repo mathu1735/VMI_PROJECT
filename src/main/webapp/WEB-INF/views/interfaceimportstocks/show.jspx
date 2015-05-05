@@ -12,5 +12,6 @@
         <field:display field="infMovementType" id="s_com_vmi_domain_InterfaceImportStock_InfMovementType" object="${interfaceimportstock}" z="XXRxao7+F4A/DWpZOyUXmJg2Qak="/>
         <field:display field="infRefPO" id="s_com_vmi_domain_InterfaceImportStock_InfRefPO" object="${interfaceimportstock}" z="LHjtBzruX5WYxKhdk2FL8b1vuew="/>
         <field:display field="infQuantity" id="s_com_vmi_domain_InterfaceImportStock_InfQuantity" object="${interfaceimportstock}" z="Dar8S2cthuD0MJSHbHlnzTMyr+Q="/>
+        <field:display field="infFileName" id="s_com_vmi_domain_InterfaceImportStock_InfFileName" object="${interfaceimportstock}" z="x2L5S1T8S1F2SQMcrtTyhMLMess="/>
     </page:show>
 </div>

@@ -90,8 +90,8 @@ function saveAddPOFunc(){
 	var	purchaseorder = {
 			        POCode: POCode,
 			        POQuantity: POQuantity
-			        // updatedDate: currentDate,
-			        // createdDate: currentDate
+			        updatedDate: currentDate,
+			        createdDate: currentDate
 			        
 			    };
 

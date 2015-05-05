@@ -20,10 +20,10 @@
 						<li>Import File</li>
 					</ol>
 				</form>
-				<form class="form-horizontal" role="form" style="height: 95px;">
+				<form class="form-horizontal" role="form">
 					<tiles:insertTemplate template="/WEB-INF/views/stockmovements/ImportDataMainPageHEAD.jspx"/>
 				</form>
-				<form class="form-horizontal" role="form" style="height: 95px;">
+				<form class="form-horizontal" role="form">
 					
 					<tiles:insertTemplate template="/WEB-INF/views/stockmovements/ImportDataMainPageMENU.jspx"/>
 				</form>

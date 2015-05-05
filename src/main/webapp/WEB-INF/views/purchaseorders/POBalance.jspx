@@ -8,12 +8,12 @@
 			<table class="table table-bordered" role="table" id = "AllTable">
 				<thead>
 				  <tr>
-				    <th rowspan="2">PO NO.</th>
-				    <th rowspan="2">Material NO. <br/>(Liter)</th>
-				    <th rowspan="2">จำนวนที่เปิดPO<br/>(Liter)</th>
-				    <th rowspan="2">จำนวนที่ส่งของ <br/>(Liter)</th>
-				    <th rowspan="2">จำนวนคงค้าง <br/>(Liter)</th>
-				    <th rowspan="2">วัที่อัพเดตล่าสุด</th>
+				    			<th rowspan="2">PO NO.</th>
+							    <th rowspan="2">Material NO. <br/>(Liter)</th>
+							    <th rowspan="2">Initial Quantity PO<br/>(Liter)</th>
+							    <th rowspan="2">Receive Quantity <br/>(Liter)</th>
+							    <th rowspan="2">Balance Quantity<br/>(Liter)</th>
+							   	<th rowspan="2">Lastest Update</th>
 
 				  </tr>
 			

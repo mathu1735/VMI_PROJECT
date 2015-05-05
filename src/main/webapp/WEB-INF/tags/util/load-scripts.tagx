@@ -57,6 +57,7 @@
   <spring:url value="/resources/scripts/jquery.validate.js" var="jquery_validate_js_url" />
   <spring:url value="/resources/scripts/bootstrap-datepicker.js" var="bootstrap_datepicker_js_url" />
    <spring:url value="/resources/scripts/jquerycustomvalidation.js" var="jquery_custom_validation_js" />
+    <spring:url value="/resources/scripts/jquery.csv-0.71.js" var="jquery_csv_js" />
 
   <script src="${jquery_js_url}" type="text/javascript"><!-- required for FF3 and Opera --></script>
   <script src="${jqueryUI_js_url}" type="text/javascript"><!-- required for FF3 and Opera --></script>
@@ -71,5 +72,6 @@
     <script src="${bootstrap_datepicker_js_url}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
   <script src="${jquery_custom_validation_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
+  <script src="${jquery_csv_js}" type="text/javascript"><!-- required for FF3 and Opera --></script>
 
 </jsp:root>

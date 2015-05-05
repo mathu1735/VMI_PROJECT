@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect InterfaceImportStock_Roo_Jpa_ActiveRecord {
     
-    public static final List<String> InterfaceImportStock.fieldNames4OrderClauseFilter = java.util.Arrays.asList("InfDate", "InfLocationCode", "InfMovementType", "InfRefPO", "InfQuantity");
+    public static final List<String> InterfaceImportStock.fieldNames4OrderClauseFilter = java.util.Arrays.asList("InfDate", "InfLocationCode", "InfMovementType", "InfRefPO", "InfQuantity", "InfFileName");
     
     public static long InterfaceImportStock.countInterfaceImportStocks() {
         return entityManager().createQuery("SELECT COUNT(o) FROM InterfaceImportStock o", Long.class).getSingleResult();
