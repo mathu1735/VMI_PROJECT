@@ -64,4 +64,15 @@ function saveAddEstimateFunc(){
 }
 function addDataToTableFunc(){
 
+	var s = $('#startDate').val();
+	var ss = s.split('/');
+	var Start = ss[1]+'/'+ss[0]+'/'+ss[2];
+	var e = $('#endDate').val();
+	var ee = e.split('/');
+	var End = ss[1]+'/'+ss[0]+'/'+ss[2];
+	var sDate = new Date(Start);
+	var eDate = new Date(End);
+	
+
+
 }

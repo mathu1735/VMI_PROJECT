@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
 
 <spring:url value="/resources/scripts/vmi/ImportFile.js" var="ImportFile" />
+<spring:url value="/resources/scripts/vmi/AddPlan.js" var="AddPlan" />
 
 
 
@@ -35,13 +36,13 @@
 						<div class="tab-content">
 							<tiles:insertTemplate template="/WEB-INF/views/stockmovements/ImportData_importData.jspx"/>
 							<tiles:insertTemplate template="/WEB-INF/views/stockmovements/ImportData_addPO.jspx"/>
-							<tiles:insertTemplate template="/WEB-INF/views/stockmovements/ImportData_addEstimateUsage.jspx"/>
+							<tiles:insertTemplate template="/WEB-INF/views/stockmovements/ImportData_addPlan.jspx"/>
 						</div>	
 					</div>
 				
 
 		<script src="${ImportFile}" type="text/javascript"><!--Not Empty --></script>
-		
+		<script src="${AddPlan}" type="text/javascript"><!--Not Empty --></script>
 
 	</div>
 
