@@ -10,7 +10,13 @@
 		<div class="col-sm-1"><jsp:text/></div>
 		
 	</div>
-	<br/>
+	<div class="form-group">
+		<div class="col-sm-9"><jsp:text/></div>
+		<div class="col-sm-2">
+			<button id="btnAddEstimate" type="button" class="btn btn-success pull-right">Add Estimate Usage</button>
+		</div>
+		<div class="col-sm-1"><jsp:text/></div>
+	</div>
 	<div class="form-group">
 		<div class="col-sm-1"><jsp:text/></div>
 		<div class="col-sm-10 table-responsive span*" style="height: 170px;overflow-y:scroll;border: 1px solid #ccc;"> 
@@ -43,6 +49,113 @@
 		<div class="col-sm-5"><jsp:text/></div>
 	</div>
 
-	
+	<div class="modal fade" id="modalAddEstimate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal" role="form" id="formAddEstimate">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+						<h4 class="modal-title" id="myModalLabel">Add Estimate Usage</h4>
+					</div>
+					<div class="modal-body">
+						<div class="form-group col-sm-12">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">start date</label>
+								<div class="col-sm-7">
+									<div class="input-group date">
+										<input type="text" id="startDate" class="form-control" placeholder="dd/mm/yyyy" required="required"/>
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button" id="btnStartDate" ><span class="glyphicon glyphicon-calendar"></span></button>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">end date</label>
+								<div class="col-sm-7">
+									<div class="input-group date">
+										<input type="text" id="endDate" class="form-control" placeholder="dd/mm/yyyy" required="required"/>
+										<span class="input-group-btn">
+											<button class="btn btn-default" type="button" id="btnEndDate" ><span class="glyphicon glyphicon-calendar"></span></button>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date1</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date2</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date3</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date4</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date5</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date6</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							
+						</div>
+						<div class="form-group">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Estimate Usage Date7</label>
+								<div class="col-sm-5">
+									<input class="form-control" id="estimateUsage" required="required" maxlength="30"><jsp:text/></input>
+								</div>
+								<label class="col-sm-2 control-label">Liter</label>
+							</div>
+							<div class="col-sm-6">
+								<jsp:text/>
+							</div>
+							
+						</div>
+					</div>
+					<div class="modal-footer">
+
+						<button id="btnSaveEstimate" type="button" class="btn btn-primary">save</button>
+						<button id="btnCancel"  data-dismiss="modal"  type="button" class="btn btn-primary">cancel</button>
+		
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 </div>
