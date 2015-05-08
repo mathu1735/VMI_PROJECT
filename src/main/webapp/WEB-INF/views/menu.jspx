@@ -11,7 +11,7 @@
                 <a href="http://localhost:8080/vmi/deliveryplans/Plan">Plan</a>
             </li>
              <li>
-                <a href="http://localhost:8080/vmi/stockmovements/ImportData">Import Usage</a>
+                <a href="http://localhost:8080/vmi/stockmovements/ImportData">Add data</a>
             </li>
             <li>
                 <a href="http://localhost:8080/vmi/stockmovements/Stock">Stock</a>
@@ -22,6 +22,9 @@
            
             <li>
                 <a href="http://localhost:8080/vmi/stocklocations/StockLocation">Add/Edit Location</a>
+            </li>
+            <li>
+                <a href="http://localhost:8080/vmi/userses">Account Settings</a>
             </li>
         </ul>
     </div>

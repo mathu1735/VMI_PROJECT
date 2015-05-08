@@ -5,6 +5,7 @@
 
 	<li role="presentation"><a href="#ImportFile" aria-controls="ImportFile" role="tab" data-toggle="tab">Import csv file</a></li>
 	<li role="presentation"><a href="#AddPO" aria-controls="AddPO" role="tab" data-toggle="tab">Add purchase order</a></li>
+	<li role="presentation"><a href="#AddPlan" aria-controls="AddPlan" role="tab" data-toggle="tab">Add Plan</a></li>
 	
 	
 	

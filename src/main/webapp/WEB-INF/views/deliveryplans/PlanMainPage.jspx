@@ -4,9 +4,6 @@
     <jsp:output omit-xml-declaration="yes"/>
 
 
-
-<spring:url value="/resources/scripts/vmi/AddPlan.js" var="AddPlan"/>
-
 <c:set var="delimeter" scope="session" value="#"/>
 
 	<div>
@@ -41,7 +38,7 @@
 
 
 
-		<script src="${AddPlan}" type="text/javascript"><!--Not Empty --></script>
+
 		
 		
 
