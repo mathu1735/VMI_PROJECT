@@ -56,4 +56,12 @@ privileged aspect StockLocation_Roo_JavaBean {
         this.ItemCode = ItemCode;
     }
     
+    public String StockLocation.getSLocAddress() {
+        return this.SLocAddress;
+    }
+    
+    public void StockLocation.setSLocAddress(String SLocAddress) {
+        this.SLocAddress = SLocAddress;
+    }
+    
 }

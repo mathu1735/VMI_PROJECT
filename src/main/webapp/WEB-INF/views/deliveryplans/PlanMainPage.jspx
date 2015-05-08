@@ -4,6 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
 
 
+
 <c:set var="delimeter" scope="session" value="#"/>
 
 	<div>
@@ -27,20 +28,7 @@
 
 				<!-- <tiles:insertTemplate template="/WEB-INF/views/stockmovements/StockMovement.jspx"/> -->
 			</div>
-				<!-- <div role="tabpanel">	
-						<div class="tab-content">
-							<tiles:insertTemplate template="/WEB-INF/views/deliveryplans/Plan.jspx"/>
-							
-					</div>
-				</div> -->
 
-				
-
-
-
-
-		
-		
 
 	</div>
 

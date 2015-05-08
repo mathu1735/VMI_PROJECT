@@ -4,20 +4,19 @@
 	<jsp:output omit-xml-declaration="yes"/>
 	<div class="form-group">
 		<div class="table-responsive span*" style="height: 170px;overflow-y:scroll;border: 1px solid #ccc;"> 
-			<table class="table table-bordered" role="table" id = "AllTable">
+			<table class="table table-bordered" role="table" id = "poMoveTable">
 				<thead>
 				  <tr>
+				  	<th rowspan="2">Date </th>
 				    <th rowspan="2">PO NO.</th>
-							    <th rowspan="2">Material NO. <br/>(Liter)</th>
-							    <th rowspan="2">Initial Quantity PO<br/>(Liter)</th>
-							    <th rowspan="2">Receive Quantity <br/>(Liter)</th>
-							    <th rowspan="2">Balance Quantity<br/>(Liter)</th>
-							   	<th rowspan="2">Lastest Update</th>
+					<th rowspan="2">Movement Type<br/></th>
+					<th rowspan="2">Quantity<br/>(Liter)</th>
+					<th rowspan="2">Balance Quantity<br/>(Liter)</th>
 
 				  </tr>
 			
 				</thead>
-				<tbody id="tBodyAll" class=" table-bordered">
+				<tbody id="poMoveBody" class=" table-bordered">
 
 				</tbody>
 			</table>

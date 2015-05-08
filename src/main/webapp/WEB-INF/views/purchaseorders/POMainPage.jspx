@@ -3,12 +3,13 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
 
-<spring:url value="/resources/scripts/purchaseorders/POMainPageHEAD.js" var="head" />
+
+<spring:url value="/resources/scripts/vmi/PurchaseOrder.js" var="PurchaseOrder" />
 
 
 
 <c:set var="delimeter-fulid" scope="session" value="#"/>
-<div>
+
 
 			
 	<div class="container-fulid">
@@ -23,21 +24,23 @@
 			<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/POMainPageHEAD.jspx"/>
 			<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/POMainPageMENU.jspx"/>
 		</form>
-
-	</div>
-	<div role="tabpanel">	
-		<div class="tab-content">
-			<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/PO.jspx"/>
-			<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/POBalance.jspx"/>
-			<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/POMovement.jspx"/>
-							
+		<div role="tabpanel">	
+			<div class="tab-content">
+				<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/PO.jspx"/>
+				<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/POBalance.jspx"/>
+				<tiles:insertTemplate template="/WEB-INF/views/purchaseorders/POMovement.jspx"/>
+								
+			</div>
 		</div>
+
+		<script src="${PurchaseOrder}" type="text/javascript"><!--Not Empty --></script>
 	</div>
+	
 
 
-	<script src="${head}" type="text/javascript"><!--Not Empty --></script>
+	
 	
 
 		  	
-</div>
+
 </div>

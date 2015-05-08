@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
 
 <spring:url value="/resources/scripts/stockLocation/StockLocationMainPageHEAD.js" var="head" />
-<spring:url value="/resources/scripts/stockLocation/StockLocationAll.js" var="StockLocationAll" />
+<spring:url value="/resources/scripts/vmi/StockLocationAll.js" var="StockLocationAll" />
 
 
 <c:set var="delimeter" scope="session" value="#"/>

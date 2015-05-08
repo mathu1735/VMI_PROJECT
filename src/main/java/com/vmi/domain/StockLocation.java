@@ -39,4 +39,8 @@ public class StockLocation extends BaseEntity {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "ItemCode")
     private Item ItemCode;
+
+    /**
+     */
+    private String SLocAddress;
 }

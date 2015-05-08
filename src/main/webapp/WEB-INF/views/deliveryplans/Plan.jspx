@@ -34,15 +34,4 @@
 		</div>
 		<div class="col-sm-1"><jsp:text/></div>
 	</div>
-	<div class="form-group col-sm-12">
-		<div class="col-sm-5"><jsp:text/></div>
-		<div class="col-sm-2" align="center">
-			<button id="btnSubmitPlan" type="button" class="btn btn-primary">submit plan</button>
-		</div>
-
-		<div class="col-sm-5"><jsp:text/></div>
-	</div>
-
-	
-
 </div>

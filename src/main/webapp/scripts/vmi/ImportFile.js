@@ -233,7 +233,7 @@ function saveImportToStockFunc(dataImp){
 			        SLocCode: {id:SLocCode,version:0},
 			        SMovQuantity: SMovQuantity,
 			        POCode: {id:POCode,version:0},
-			        //SMovStatusCode: SMovStatusCode
+			        SMovStatusCode: SMovStatusCode.toString();
 			    };
 	var data = $.ajax({
 		type: "POST",

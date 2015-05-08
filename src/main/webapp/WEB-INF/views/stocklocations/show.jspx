@@ -13,5 +13,6 @@
         <field:display field="SLocMin" id="s_com_vmi_domain_StockLocation_SLocMin" object="${stocklocation}" z="QYB6yjj1JD5uF5c8A6w3zk0f43k="/>
         <field:display field="SLocMax" id="s_com_vmi_domain_StockLocation_SLocMax" object="${stocklocation}" z="I+Pv6UtF2WysCoDnH0KO4hBgwUQ="/>
         <field:display field="itemCode" id="s_com_vmi_domain_StockLocation_ItemCode" object="${stocklocation}" z="4MFW8cGz6bVs5oWc/z/wlSavR1E="/>
+        <field:display field="SLocAddress" id="s_com_vmi_domain_StockLocation_SLocAddress" object="${stocklocation}" z="VRKWwBR+tM6mmN51IoaNkuUH+Pc="/>
     </page:show>
 </div>

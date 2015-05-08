@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 privileged aspect StockLocation_Roo_Jpa_ActiveRecord {
     
-    public static final List<String> StockLocation.fieldNames4OrderClauseFilter = java.util.Arrays.asList("SLocName", "SLocCode", "SLocCurrentQuantity", "SLocMin", "SLocMax", "ItemCode");
+    public static final List<String> StockLocation.fieldNames4OrderClauseFilter = java.util.Arrays.asList("SLocName", "SLocCode", "SLocCurrentQuantity", "SLocMin", "SLocMax", "ItemCode", "SLocAddress");
     
     public static long StockLocation.countStockLocations() {
         return entityManager().createQuery("SELECT COUNT(o) FROM StockLocation o", Long.class).getSingleResult();

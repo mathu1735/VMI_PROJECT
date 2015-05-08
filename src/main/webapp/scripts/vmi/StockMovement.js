@@ -58,7 +58,7 @@ function loadStockMovementDatafunc(){
 	$("#stockMoveBody").empty();
 	for(var i=0;i<stockmovementData.length;i++){
 
-			var date = new Date(stockmovementData[i].SMovDate).format('dd/mm/yyyy');
+			var date = new Date(stockmovementData[i].SMovDate).format('dd/mm/yyyy') == null? "-":new Date(stockmovementData[i].SMovDate).format('dd/mm/yyyy');
 	    	var location = stockmovementData[i].SLocCode.SLocCode;
 	    	var total = stockmovementData[i].SMovBalance ==null?"-":stockmovementData[i].SMovBalance;
 	    	var usage = stockmovementData[i].SMovQuantity;

@@ -13,5 +13,6 @@
         <field:input field="SLocMin" id="c_com_vmi_domain_StockLocation_SLocMin" validationMessageCode="field_invalid_integer" z="ghTFMnBvNXQDpCc2wv6d1KRkjIc="/>
         <field:input field="SLocMax" id="c_com_vmi_domain_StockLocation_SLocMax" validationMessageCode="field_invalid_integer" z="hqziU592wz1ugbwUo0ijam3siGQ="/>
         <field:select field="ItemCode" id="c_com_vmi_domain_StockLocation_ItemCode" itemValue="id" items="${items}" path="/items" z="UzZJD3sYYm8oA2V2eOnemHFQ0x8="/>
+        <field:input field="SLocAddress" id="c_com_vmi_domain_StockLocation_SLocAddress" z="N+shWUbJoA7S+7sdYQRm920dB7c="/>
     </form:update>
 </div>

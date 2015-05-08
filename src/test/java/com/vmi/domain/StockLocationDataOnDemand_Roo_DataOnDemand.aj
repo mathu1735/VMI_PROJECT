@@ -34,6 +34,7 @@ privileged aspect StockLocationDataOnDemand_Roo_DataOnDemand {
         StockLocation obj = new StockLocation();
         setCreatedBy(obj, index);
         setCreatedDate(obj, index);
+        setSLocAddress(obj, index);
         setSLocCode(obj, index);
         setSLocCurrentQuantity(obj, index);
         setSLocMax(obj, index);
@@ -52,6 +53,11 @@ privileged aspect StockLocationDataOnDemand_Roo_DataOnDemand {
     public void StockLocationDataOnDemand.setCreatedDate(StockLocation obj, int index) {
         Date createdDate = new GregorianCalendar(Calendar.getInstance().get(Calendar.YEAR), Calendar.getInstance().get(Calendar.MONTH), Calendar.getInstance().get(Calendar.DAY_OF_MONTH), Calendar.getInstance().get(Calendar.HOUR_OF_DAY), Calendar.getInstance().get(Calendar.MINUTE), Calendar.getInstance().get(Calendar.SECOND) + new Double(Math.random() * 1000).intValue()).getTime();
         obj.setCreatedDate(createdDate);
+    }
+    
+    public void StockLocationDataOnDemand.setSLocAddress(StockLocation obj, int index) {
+        String SLocAddress = "SLocAddress_" + index;
+        obj.setSLocAddress(SLocAddress);
     }
     
     public void StockLocationDataOnDemand.setSLocCode(StockLocation obj, int index) {

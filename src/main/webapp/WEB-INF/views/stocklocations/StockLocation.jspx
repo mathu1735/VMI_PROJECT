@@ -3,21 +3,25 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8"/>
 	<jsp:output omit-xml-declaration="yes"/>
 
-	<div class="col-sm-11" align="center">
+	<div class="form-group">
+		<div class="col-sm-12">
+			<div class="col-sm-8"><jsp:text/></div>
+			<div class="col-sm-3">
+				<button id="btnAdd" type="button" class="btn btn-primary pull-right">add location</button>
+			</div>
+			<div class="col-sm-1"><jsp:text/></div>
+		</div>
+	</div>
+	<div class="col-sm-12" align="center">
 		<fieldset >
 			<legend >Create Location</legend>
-			<div class="form-group col-sm-12">
-				<div class="col-sm-10"><jsp:text/></div>
-				<div class="col-sm-2">
-					<button id="btnAdd" type="button" class="btn btn-success pull-right">add location</button>
-				</div>
-				
-			</div>
+			
 			<div class="form-group col-sm-12">
 				<div class="table-responsive span*" style="height: 170px;overflow-y:scroll;border: 1px solid #ccc;"> 
 					<table class="table table-bordered" role="table" id = "LocTableHead">
 						<thead>
 						  <tr>
+						  	<th rowspan="2">Edit</th>
 						  	<th rowspan="2">NO.</th>
 						    <th rowspan="2">Location ID</th>
 						    <th rowspan="2">Min of quatity<br/>(Liter)</th>
@@ -42,82 +46,66 @@
 				<form class="form-horizontal" role="form" id="formAddLocation">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
-						<h4 class="modal-title" id="myModalLabel">Add Location</h4>
+						<label id="locationModalHeader" class="modal-title">Add Location</label>
 					</div>
 					<div class="modal-body">
 						<div class="form-group">
-							<div class="col-sm-1">
-								<jsp:text/>
-							</div>
-							<div class="col-sm-7">
-								<label class="col-sm-4 control-label">location code</label>
-								<div class="col-sm-8">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Location Code</label>
+								<div class="col-sm-7">
 									<input id="locationCode" type="text" class="form-control" required="required"/>
 								
 								</div>
 			
 							</div>
-							<div class="col-sm-4">
-								<jsp:text/>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-1">
-								<jsp:text/>
-							</div>
-							<div class="col-sm-7">
-								<label class="col-sm-4 control-label">location name</label>
-								<div class="col-sm-8">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Location Name</label>
+								<div class="col-sm-7">
 									<input id="locationName" type="text" class="form-control" required="required"/>
+								
 								</div>
-			
-							</div>
-							<div class="col-sm-4">
-								<jsp:text/>
 							</div>
 						</div>
+						
 						<div class="form-group">
-							<div class="col-sm-1">
-								<jsp:text/>
-							</div>
-							<div class="col-sm-7">
-								<label class="col-sm-4 control-label">min of quantity</label>
-								<div class="col-sm-8">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Min of quantity</label>
+								<div class="col-sm-7">
 									<input id="minOfQuantity" type="text" class="form-control" required="required"/>
 								</div>
 			
 							</div>
-							<div class="col-sm-4">
-								<jsp:text/>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-1">
-								<jsp:text/>
-							</div>
-							<div class="col-sm-7">
-								<label class="col-sm-4 control-label">max of quantity</label>
-								<div class="col-sm-8">
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label">Max of quantity</label>
+								<div class="col-sm-7">
 									<input id="maxOfQuantity" type="text" class="form-control" required="required"/>
 								</div>
 			
 							</div>
-							<div class="col-sm-4">
-								<jsp:text/>
-							</div>
 						</div>
+						
 						<div class="form-group">
-							<div class="col-sm-1">
-								<jsp:text/>
-							</div>
-							<div class="col-sm-7">
-								<label class="col-sm-4 control-label">start quantity</label>
-								<div class="col-sm-8">
+						
+							<div class="col-sm-6">
+								<label class="col-sm-5 control-label" id ="startQuantityLabel">start quantity</label>
+								<div class="col-sm-7">
 									<input id="startQuantity" type="text" class="form-control" required="required"/>
 								</div>
 			
 							</div>
-							<div class="col-sm-4">
+							<div class="col-sm-6">
+								<jsp:text/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-9">
+								<label class="col-sm-3 control-label"> Address  </label>
+								<div class="col-sm-9">
+									<textarea id="locationAddr" class="form-control" rows="2"><jsp:text/></textarea>
+								</div>
+			
+							</div>
+							<div class="col-sm-3">
 								<jsp:text/>
 							</div>
 						</div>
