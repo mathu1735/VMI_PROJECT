@@ -10,22 +10,23 @@
         <logout logout-url="/resources/j_spring_security_logout" />
         <!-- Configure these elements to secure URIs in your application -->
         <intercept-url pattern="/choices/**" access="hasRole('ROLE_ADMIN')" />
-
+        <!-- .................... -->
         <!-- setting the way to access -->
+        <!-- admin -->
         <intercept-url pattern="/userses/**" access="hasRole('admin')" />
-
+        <!-- staff -->
         <intercept-url pattern="/stocklocations/StockLocation/**" access="hasRole('staff')" />
         <intercept-url pattern="/stockmovements/ImportData/**" access="hasRole('staff')" />
-
-        <intercept-url pattern="/stockmovements/Stock/**" access="hasRole('planner')" />
+        <!-- setting the way to access -->
+        <!-- <intercept-url pattern="/stockmovements/Stock/**" access="hasRole('planner')" />
         <intercept-url pattern="/stockmovements/Stock/**" access="hasRole('manager')" />
         <intercept-url pattern="/stockmovements/Stock/**" access="hasRole('supervisor')" />
         <intercept-url pattern="/purchaseorders/purchaseorder/**" access="hasRole('planner')" />
         <intercept-url pattern="/purchaseorders/purchaseorder/**" access="hasRole('manager')" />
-        <intercept-url pattern="/purchaseorders/purchaseorder/**" access="hasRole('supervisor')" />
-
+        <intercept-url pattern="/purchaseorders/purchaseorder/**" access="hasRole('supervisor')" /> -->
+        <!-- planner -->
         <intercept-url pattern="/deliveryplans/Plan/**" access="hasRole('planner')" />
-
+        <!-- .................... -->
         <intercept-url pattern="/member/**" access="isAuthenticated()" />
         <intercept-url pattern="/resources/**" access="permitAll" />
         <intercept-url pattern="/login/**" access="permitAll" />
