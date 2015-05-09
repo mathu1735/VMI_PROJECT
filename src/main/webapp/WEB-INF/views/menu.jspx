@@ -1,32 +1,74 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+<div  xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
+
+    <script>
+    var userName = "${user}";
+
+    $(function()
+    {
+        if ( userName == "admin" )
+        {
+            $('.menuLink').hide();
+            $('.admin').show();
+        }
+
+        if ( userName == "staff" )
+        {
+            $('.menuLink').hide();
+            $('.staff').show();
+        }
+
+        if ( userName == "manager" )
+        {
+            $('.menuLink').hide();
+            $('.manager').show();
+        }
+
+        if ( userName == "planner" )
+        {
+            $('.menuLink').hide();
+            $('.planner').show();
+        }
+
+        if ( userName == "supervisor" )
+        {
+            $('.menuLink').hide();
+            $('.supervisor').show();
+        }
+    })
+    </script>
+    
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
-                <a href="http://localhost:8080/vmi">Main</a>
+                <a href="http://localhost:8080/vmi">Hello ${user}</a>
             </li>
             <li>
-                <a href="http://localhost:8080/vmi/deliveryplans/Plan">Plan</a>
+                <a href="http://localhost:8080/vmi">Main </a>
             </li>
             <li>
-                <a href="http://localhost:8080/vmi/stockmovements/ImportData">Add data</a>
+                <a class="menuLink planner" href="http://localhost:8080/vmi/deliveryplans/Plan">Plan</a>
+            </li>
+             <li>
+                <a class="menuLink staff" href="http://localhost:8080/vmi/stockmovements/ImportData">Add data</a>
             </li>
             <li>
-                <a href="http://localhost:8080/vmi/stockmovements/Stock">Stock</a>
+                <a class="menuLink staff manager supervisor" href="http://localhost:8080/vmi/stockmovements/Stock">Stock</a>
             </li>
             <li>
-                <a href="http://localhost:8080/vmi/purchaseorders/purchaseorder">PO</a>
+                <a class="menuLink staff manager supervisor" href="http://localhost:8080/vmi/purchaseorders/purchaseorder">PO</a>
+            </li>
+           
+            <li>
+                <a class="menuLink staff" href="http://localhost:8080/vmi/stocklocations/StockLocation">Add/Edit Location</a>
             </li>
             <li>
-                <a href="http://localhost:8080/vmi/stocklocations/StockLocation">Add/Edit Location</a>
+                <a class="menuLink admin" href="http://localhost:8080/vmi/userses">Account Settings</a>
             </li>
-            <li>
-                <a href="http://localhost:8080/vmi/userses">Account Settings</a>
-            </li>
+          
         </ul>
     </div>
     <!--  -->
-   
 </div>

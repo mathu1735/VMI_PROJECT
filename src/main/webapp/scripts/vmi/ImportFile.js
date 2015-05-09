@@ -147,8 +147,8 @@ function saveImportToInfFunc(value){
 	
 	var d = value[0];
 	var dd = d.split('.');
-	
-	var date = dd[2]+'/'+dd[1]+'/'+dd[0];
+	var year = parseInt(dd[2])+543;
+	var date = dd[1]+'/'+dd[0]+'/'+year;//format mm/dd/yyyy
 	var storage = value[1];
 	var moveType = value[2];
 	var quantity = value[3];
@@ -194,6 +194,9 @@ function addImportToStockFunc(data){
 	for(var i=0;i<data.length;i++){
 		
 		saveImportToStockFunc(data[i]);
+		if(data[i][3] == '101'||data[i][3] == '102'){
+			saveImportToPO(data[i]);
+		}
 	}
 
 
@@ -201,24 +204,28 @@ function addImportToStockFunc(data){
 function saveImportToStockFunc(dataImp){
 	var d = dataImp[0];
 	var dd = d.split('.');
-	var SMovDate = dd[2]+'/'+dd[1]+'/'+dd[0];
+	var year = parseInt(dd[2])+543;
+	var SMovDate = dd[1]+'/'+dd[0]+'/'+year;//format mm/dd/yyyy
 	var location = dataImp[1];
 	var status = dataImp[2];
 	var SMovQuantity = dataImp[3];
 	var po = dataImp[4];
 	var POCode;
 	var SMovStatusCode;
+	var statusCode;
 	var SLocCode;
 	for(i=0;i<movementTypeData.length;i++){
 		if(movementTypeData[i].moveCode == status){
-			SMovStatusCode = movementTypeData[i].id;
+			statusCode = movementTypeData[i].id;
+			SMovStatusCode = statusCode.toString();
 			break;
 		}
 	}
+	alert(poData.length);
 	for(i=0;i<poData.length;i++){
 		if(poData[i].POCode == po){
 			POCode = poData[i].id;
-			break;
+
 		}
 	}
 	for(i=0;i<locationData.length;i++){
@@ -233,7 +240,7 @@ function saveImportToStockFunc(dataImp){
 			        SLocCode: {id:SLocCode,version:0},
 			        SMovQuantity: SMovQuantity,
 			        POCode: {id:POCode,version:0},
-			        SMovStatusCode: SMovStatusCode.toString();
+			        SMovStatusCode:SMovStatusCode
 			    };
 	var data = $.ajax({
 		type: "POST",
@@ -260,4 +267,14 @@ function saveImportToStockFunc(dataImp){
 		},
 		async: false
 	});
+	 clearInfTable();
+}
+
+function clearInfTable(){
+	$('#importTBody').empty();
+}
+
+function saveImportToPO(dataToPO){
+	
+
 }

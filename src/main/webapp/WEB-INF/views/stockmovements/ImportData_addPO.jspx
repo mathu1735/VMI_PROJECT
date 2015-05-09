@@ -3,19 +3,26 @@
 	<jsp:directive.page contentType="text/html;charset=UTF-8"/>
 	<jsp:output omit-xml-declaration="yes"/>
 
-	
+		<div class="form-group">
+			<div class="col-sm-1"><jsp:text/></div>
+			<div class="col-sm-10">
+				<h4>Add Puchase Order</h4>
+			</div>
+			<div class="col-sm-1"><jsp:text/></div>
+			
+		</div>
 		<div class="form-group">
 			<div class="col-sm-2"><jsp:text/></div>
 			<div class="col-sm-8" align="center" >
 			<fieldset >
-				<legend >เพิ่มข้อมูลใบสั่งซื้อ</legend>
+				<legend >purchase order</legend>
 				<form class="form-horizontal" id="formAddPO">
 					<div class="form-group">
 						<div class="col-sm-3">
 							<jsp:text/>
 						</div>
 						<div class="col-sm-6">
-							<label class="col-sm-4 control-label" >เลขที่ใบสั่งซื้อ</label>
+							<label class="col-sm-6 control-label" >Purchease Order NO.</label>
 							<div class="col-sm-5">
 								<input class="form-control" id = "PONumber" required="required" maxlength="30"><jsp:text/></input>
 							</div>
@@ -30,9 +37,9 @@
 							<jsp:text/>
 						</div>
 						<div class="col-sm-6">
-							<label class="col-sm-4 control-label" >จำนวนที่เปิด(kg)</label>
+							<label class="col-sm-6 control-label" >amount of quantity(kg)</label>
 							<div class="col-sm-5">
-								<input class="form-control" id = "quantity" required="required" maxlength="30"><jsp:text/></input>
+								<input class="form-control" id = "quantityOfPO" required="required" maxlength="30"><jsp:text/></input>
 							</div>
 						</div>
 						<div class="col-sm-3"><jsp:text/></div>
@@ -41,7 +48,7 @@
 					<div class="form-group">
 						<div class="col-sm-6"><jsp:text/></div>
 						<div class="col-sm-1">
-							<button id="btnSubmit" type="button" class="btn btn-primary">Submit</button>
+							<button id="btnAddPOSubmit" type="button" class="btn btn-primary">Submit</button>
 						</div>
 					
 						<div class="col-sm-5"><jsp:text/></div>
@@ -55,20 +62,21 @@
 
 			<div class="col-sm-12">
 				<div class="table-responsive span*" style="height:170px;overflow-y:scroll;border: 1px solid #ccc;"> 
-					<table class="table table-bordered" role="table" id = "AllTable">
+					<table class="table table-bordered" role="table" id = "addPOTable">
 						<thead>
 						  <tr>
-						    <th rowspan="2">PO NO.</th>
-						    <th rowspan="2">Material NO. <br/>(Liter)</th>
-						    <th rowspan="2">จำนวนที่เปิดPO<br/>(Liter)</th>
-						    <th rowspan="2">จำนวนที่ส่งของ <br/>(Liter)</th>
-						    <th rowspan="2">จำนวนคงค้าง <br/>(Liter)</th>
-						    <th rowspan="2">วัที่อัพเดตล่าสุด</th>
+						  
+							    <th rowspan="2">PO NO.</th>
+							    <th rowspan="2">Initial Quantity PO<br/>(Liter)</th>
+							    <th rowspan="2">Receive Quantity <br/>(Liter)</th>
+							    <th rowspan="2">Balance Quantity<br/>(Liter)</th>
+							   	<th rowspan="2">Lastest Update</th>
+
 
 						  </tr>
 					
 						</thead>
-						<tbody id="tBodyAll" class=" table-bordered">
+						<tbody id="addPOBody" class=" table-bordered">
 
 						</tbody>
 					</table>

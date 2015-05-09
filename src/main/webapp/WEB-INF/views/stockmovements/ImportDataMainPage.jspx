@@ -5,7 +5,7 @@
 
 <spring:url value="/resources/scripts/vmi/ImportFile.js" var="ImportFile" />
 <spring:url value="/resources/scripts/vmi/AddPlan.js" var="AddPlan" />
-
+<spring:url value="/resources/scripts/vmi/AddPO.js" var="AddPO" />
 
 
 <c:set var="delimeter" scope="session" value="#"/>
@@ -43,7 +43,7 @@
 
 		<script src="${ImportFile}" type="text/javascript"><!--Not Empty --></script>
 		<script src="${AddPlan}" type="text/javascript"><!--Not Empty --></script>
-
+		<script src="${AddPO}" type="text/javascript"><!--Not Empty --></script>
 	</div>
 
 

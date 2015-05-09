@@ -1,9 +1,18 @@
  var purchaseOrderData;
 var current = new Date();
 var twoDigitMonth = ((current.getMonth().length+1) === 1)? (current.getMonth()+1) : '0' + (current.getMonth()+1);
-var currentDate = current.getDate() + "/" + twoDigitMonth + "/" + current.getFullYear();
+current.setFullYear(current.getFullYear()+543);
+var currentDate = twoDigitMonth + "/" +current.getDate() +"/" + current.getFullYear();
+
 
 ////////////////regular expression////////////////
+$('#PONumber').bind('keyup', function () {
+		 	var x = $('#PONumber').val();   
+		    var regEx = /^[0-9\b]+$/;   
+		    if(!x.match(regEx)){
+		    	$('#PONumber').val("");   
+	}
+});
 $('#quantityOfPO').bind('keyup', function () {
 		 	var x = $('#quantityOfPO').val();   
 		    var regEx = /^[0-9\b]+$/;   
@@ -18,7 +27,7 @@ $('#quantityOfPO').bind('keyup', function () {
 // 	return false;
 // }); 
 
-$('#btnSummit').on('click',function(){
+$('#btnAddPOSubmit').on('click',function(){
 	saveAddPOFunc();
 });
 ////////////////////////show data/////////////////////
@@ -39,7 +48,7 @@ function purchaseOrderDatafunc(){
 	complete: function(xhr) {
 		if (xhr.readyState == 4) {
 			if (xhr.status == 200) {
-					alert("find");
+					//alert("find");
 				responseHeader = xhr.getResponseHeader('Location');
 			}else{
 					alert("fail");
@@ -84,12 +93,12 @@ function purchaseOrderDatafunc(){
 
 
 function saveAddPOFunc(){
-	alert("saveAddPOFunc");
+	//alert("saveAddPOFunc");
 	var POCode = $('#PONumber').val();
 	var POQuantity = $('#quantityOfPO').val();
 	var	purchaseorder = {
 			        POCode: POCode,
-			        POQuantity: POQuantity
+			        POQuantity: POQuantity,
 			        updatedDate: currentDate,
 			        createdDate: currentDate
 			        

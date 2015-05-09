@@ -11,26 +11,57 @@
       <spring:message code="welcome_text" />
     </p>
   </util:panel> -->
+
+<script> 
+ var monthThai = ["มกรามคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม"];
+ 
+ function displayThaiDatetime()
+ {
+  var currentdate = new Date(); 
+     var date = currentdate.getDate() + " "
+                 + ( monthThai[ currentdate.getMonth() ] )  + " " 
+                 + ( currentdate.getFullYear() + 543 );
+                 
+     var time =  currentdate.getHours() + ":"  
+                 + ( currentdate.getMinutes() >= 10 ? currentdate.getMinutes() : '0' + currentdate.getMinutes() ) + ":" 
+                 + ( currentdate.getSeconds() >= 10 ? currentdate.getSeconds() : '0' + currentdate.getSeconds() );
+  //$('#current-time').html('เวลา: ' + time  + ' ' + date);
+
+    $('#date').val(date);
+    $('#time').val(time);
+ };
+ 
+ $(document).ready(function() {
+  displayThaiDatetime();
+  setInterval(function()
+  {
+   displayThaiDatetime();
+  
+  }, 1000);
+ });
+  
+ </script>
+ 
    <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
                 <div class="form-group col-sm-12" style="height: 95px;">
-                    <div class="col-sm-4"><jsp:text/></div>
-                    <div class="col-sm-8">
+                    <div class="col-sm-2"><jsp:text/></div>
+                    <div class="col-sm-10">
                         <div class="col-sm-3"><jsp:text/></div>
                         <label class="col-sm-1 control-label">User</label>
                         <div class="col-sm-2 ">
-                            <input id="userName" type="text" class="form-control" disabled="disabled" />
+                            <input id="userName" type="text" value="${user}" class="form-control" disabled="disabled" />
                         </div>
 
                         <label class="col-sm-1 control-label">Date</label>
                         <div class="col-sm-2 ">
-                            <input id="date" type="text" class="form-control" disabled="disabled" />
+                            <input id="date"  type="text" class="form-control" disabled="disabled" />
                         </div>
 
                         <label class="col-sm-1 control-label">Time</label>
                         <div class="col-sm-2 ">
-                            <input id="time" type="text" class="form-control" disabled="disabled" />
+                            <input id="time" type="text"  class="form-control" disabled="disabled" />
                         </div>
                     </div>
                 </div>
